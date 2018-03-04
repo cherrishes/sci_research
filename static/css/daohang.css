@@ -1,0 +1,248 @@
+.daohang1{margin:0 auto;
+              width: 1200px;
+              overflow: hidden;
+              height:100px;
+              background: white;
+               }
+   .daohang2{   
+    margin:0 auto;
+    padding:0 60px;
+    width:1080px;
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    background-color:#efefef;
+}   
+.daohang2 .item{    
+    margin:0;
+    padding:0;
+    width:11%;
+    text-align:center;
+}   
+.daohang2 .item a{  
+    display:block;
+    margin:0;
+    padding:0;
+    width:auto;
+    height:auto;
+}   
+.daohang2 .item ul{ 
+    margin:0;
+    padding:0;
+    background-color:#fefefe;
+    text-align:left;
+    font-size:14px;
+    z-index:9999;
+    width:150px;
+    border:1px solid #ccc;
+    border-top-width:0;
+}   
+.daohang2 .item ul li{  
+    border-bottom:1px dashed #ccc;
+    width:125px;
+    padding-left: 24px;
+}   
+.daohang2 .item ul li:last-child{   
+    border-bottom-width:0;
+}   
+.daohang2 .item ul li a{    
+    padding-left:10px;
+}   
+.daohang2 .item ul li a:hover{  
+    background:#ffffff;
+}   
+
+
+.zhuye{
+        width: 90px;
+        height: 40px;
+        margin-left: 78px;
+        float:left;
+}
+.zhuye a{
+        width: 50px;
+        height: 20px;
+        text-decoration: none;
+        display: block;
+        margin-left: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+        font-weight: bolder;
+        text-indent: 8px;
+        color: #474747;
+}
+.zhuye a:hover{
+        color: #e81f1f;
+        background-color:#ffffff;
+}
+.keyans{
+        width: 140px;
+        height: 40px;
+        float:left;
+        text-align:center;
+        background-color: #ffffff; 
+}
+.keyans a{
+        width: 90px;
+        height: 20px;
+        text-decoration: none;
+        display: block;
+        color: #e81f1f;
+        
+        font-weight: bolder;
+        margin-left: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+}
+.keyan{
+        width: 140px;
+        height: 40px;
+        float:left;
+        text-align:center;
+}
+.keyan a{
+        width: 90px;
+        height: 20px;
+        text-decoration: none;
+        display: block;
+        color: #474747;
+        font-weight: bolder;
+        margin-left: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+}
+ 
+
+.keyan a:hover{
+        color: #e81f1f;
+        background-color:#ffffff;
+}
+.gengduo{
+        float:left;
+        text-align:center;
+        width: 100px;
+        height: 40px;
+}
+.gengduo a{
+        width: 40px;
+        height: 20px;
+        text-decoration: none;
+        display: block;
+        color: #474747;
+        margin-left: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+        font-weight: bolder;        
+}
+.gengduo a:hover{
+        color: #e81f1f;
+        background-color:#ffffff;
+}
+.keyan ul{
+        display: none;
+        position: absolute;
+        margin-left: 30px;
+        background:#efefef;
+z-index:100;
+}
+.keyan ul li{
+    width:180px;
+    height:30px;
+    line-height: 30px;
+        border-bottom: 1px solid #f7f7f6;
+}
+
+.keyan ul li a{
+    width:150px;
+    height:30px;
+    margin:0;
+    display:block;
+}
+.keyan ul li span{
+    margin-top: -30px;
+    float: right;
+}
+.keyan ul li:hover{
+    background-color:#ffffff;
+}
+
+.keyan:hover ul{
+    display: block;
+}
+
+.gengduo ul{
+        display: none;}
+
+.keyan:hover ul li ul{
+    display: none;
+}
+.keyan ul li ul{
+        display: none;
+        position: absolute;
+        margin:-30px 0 0 180px;
+}
+.keyan ul li:hover ul{
+        margin:-30px 0 0 180px;
+        display:block;
+}
+.gengduo ul{
+        display: none;
+        position: absolute;
+        margin-left: 30px;
+        background:#efefef;
+}
+.gengduo ul li{
+    width:150px;
+    height:30px;
+    line-height: 30px;
+}
+
+.gengduo ul li a{
+    width:130px;
+    height:30px;
+    margin:0;
+    display:block;
+}
+.gengduo ul li span{
+    margin-top: -30px;
+    float: right;
+}
+.gengduo ul li:hover{
+    background-color:#ffffff;
+}
+
+.gengduo:hover ul{
+    display: block;
+}
+.gengduo:hover ul li ul{
+    display: none;
+}
+.gengduo ul li ul{
+        display: none;
+        position: absolute;
+}
+.gengduo ul li:hover ul{
+        margin:-30px 0 0 -150px;
+        display:block;
+}
+ul{list-style:none;}
+.bottom{
+        margin-top: 30px;
+        width: 1200px;
+        height: 80px;
+        margin: 0 auto;
+        background-color: #d7d7d7;
+}
+.bottoms{
+        margin: 0 auto;
+        height: 80px;
+        width: 500px;
+}
+.dizhi{
+        height: 60px;
+        width: 500px;
+        padding-top: 20px;
+        font-size: 12px;
+        color: #323232;
+        
+}

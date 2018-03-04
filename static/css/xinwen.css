@@ -1,0 +1,179 @@
+.news{
+        width: 1200px;
+        height: 300px;
+        margin: 0 auto;
+}
+.yanjiu{
+        width: 678px;
+        height: 350px;
+        float: left;
+        border-right: solid 1px #d7d7d7;
+        margin-top: 22px;
+}
+.yanjiutitle{
+        width: 657px;
+        height: 34px;
+        margin-right: 22px;
+        float: left;
+        border-bottom: solid 1px #c67e88;
+        line-height: 34px; 
+        font-weight: bolder;
+        color: #8a2a36;
+font-size:16px;
+}
+.yanjiutitle span{
+        height: 34px;
+        width: 21px;
+        display: block;
+        background:url(images/点.jpg) no-repeat;
+        float: left;
+        margin: 8px 0 0 2px;
+
+}
+.research{
+        width: 75px;
+        height: 34px;
+        color: #e4c5c9;
+        border-bottom: solid 1px #c67e88;
+        float: right;
+        font-weight: lighter;
+}
+.shimo{
+        width: 646px;
+        height: 165px;
+        margin: 17px 31px 0 0;
+        float: left;
+        border:solid 1px #d7d7d7;
+}
+.yanjiuxinwen{
+        width: 626px;
+        height: 281px;
+        margin-left: 20px;
+        margin-top: 18px;
+        float: left;
+}
+.yanjiuxinwen ul li{
+        height: 21px;
+        width: 626px;
+        float: left;
+        line-height: 21px;
+        margin-bottom: 8px;
+}
+.yanjiuxinwen ul li span{
+        width: 17px;
+        height: 21px;
+        display: block;
+        background:url(images/点.jpg) no-repeat;
+        float: left;
+        margin-top: 9px;
+}
+.yanjiuxinwen ul li a{
+        font-size: 14px;
+        color: #494949;
+}
+.yanjiuxinwen ul li span.riqi{
+        float: right;
+        background: none;
+        width: 95px;
+        height: 17px;
+        margin: 0;
+        color: #bfbfbf;
+}
+.xinwendongtai{
+        width: 520px;
+        height: 410px;
+        margin-top: 22px;
+        float: left;
+}
+.dongtaititle{
+        width: 499px;
+        height: 34px;
+        margin-left: 22px;
+        float: left;
+        border-bottom: solid 1px #c67e88;
+        line-height: 34px; 
+        font-weight: bolder;
+        color: #8a2a36;
+font-size:16px;
+}
+.dongtaititle span{
+        height: 34px;
+        width: 21px;
+        display: block;
+        background:url(images/点.jpg) no-repeat;
+        float: left;
+        margin: 8px 0 0 2px;
+}
+.dongtainews{
+        width: 45px;
+        height: 34px;
+        color: #e4c5c9;
+        border-bottom: solid 1px #c67e88;
+        float: right;
+        font-weight: lighter;
+}
+.dongtaixinwen{
+        width: 485px;
+        height: 281px;
+        margin-left: 35px;
+        margin-top: 18px;
+        float: left;
+}
+.dongtaixinwen ul li{
+        height: 22px;
+        width: 480px;
+        float: left;
+        line-height: 22px;
+        margin-bottom: 11px;
+}
+.dongtaixinwen ul li span{
+        width: 17px;
+        height: 21px;
+        display: block;
+        background:url(../images/点.jpg) no-repeat;
+        float: left;
+        margin-top: 9px;
+}
+.dongtaixinwen ul li a{
+        font-size: 14px;
+        color: #494949;
+}
+.dongtaixinwen ul li span.riqi{
+        float: right;
+ text-align:right;
+        background: none;
+        width: 95px;
+        height: 17px;
+        margin: 0;
+        color: #bfbfbf;
+}
+.yanjiuxinwen ul li a{font-size:16px;}
+.dongtaixinwen ul li a{font-size:16px;}
+.yanjiuxinwen ul li span.riqi,
+ .dongtaixinwen ul li span.riqi
+ {font-family: 'Microsoft YaHei';
+font-size: 15px;}
+ .dongtainews{width:auto;}
+
+ a{text-decoration: none; color: black;}
+#buttom{
+            width:1200px;
+         height:40px;
+         background:#F7FFFF;
+         border:1px solid #C6DEF7;
+         margin: 100px auto 0;
+         padding: 20px;
+
+         }
+#buttom h1{
+            font-size: 12px;
+            color: blue;
+            font-family: "黑体";
+            font-weight: normal;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid blue;
+            text-align: center;
+            line-height: 50px;
+
+        }

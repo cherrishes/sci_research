@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}首页{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/xinwen.css' %}" type="text/css">
+    <link href="{% static 'css/datu.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+    <div id="box">
+        <div class="slide">
+            <ul>
+                <li class="slideli"><a href="#"><img src="{% static 'img/slider/1.jpg' %}" alt=""></a></li>
+                <li class="slideli"><a href="#"><img src="{% static 'img/slider/2.jpg' %}" alt=""></a></li>
+                <li class="slideli"><a href="#"><img src="{% static 'img/slider/3.jpg' %}" alt=""></a></li>
+                <li class="slideli"><a href="#"><img src="{% static 'img/slider/5.jpg' %}" alt=""></a></li>
+                <li class="slideli"><a href="#"><img src="{% static 'img/slider/6.jpg' %}" alt=""></a></li>
+            </ul>
+            <div class="arraw">
+                <a href="javascript:;" class="next"></a>
+                <a href="javascript:;" class='prev'></a>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;margin:0 auto;width:1200px;height:30px;background:white;"></div>
+
+    <div class="news">
+        <div class="yanjiu">
+            <div class="yanjiutitle">
+                <span></span><a href="/xueshuchengguo/xueshulunwen/" style="color:#842f0d;">研究进展</a>
+                <div class="research">Research</div>
+
+            </div>
+            <div class="yanjiuxinwen" style="width:635px;">
+                <ul>
+                    <li style="width:635px;"><span></span><a href="/xueshuchengguo/xueshulunwen/#id1587" title="content"
+                                                             target="_blank">content1 <i
+                            style='color:red;font-size:14px;'>new</i></a> <span class="riqi" style="text-align:right;">[2017-10-10]</span>
+                    </li>
+                    <li style="width:635px;"><span></span><a href="/xueshuchengguo/xueshulunwen/#id1572" title="content"
+                                                             target="_blank">content2 </a> <span class="riqi"
+                                                                                                 style="text-align:right;">[2017-09-20]</span>
+                    </li>
+                    <li style="width:635px;"><span></span><a href="/xueshuchengguo/xueshulunwen/#id1570" title="content"
+                                                             target="_blank">content3 </a> <span class="riqi"
+                                                                                                 style="text-align:right;">[2017-09-13]</span>
+                    </li>
+                    <li style="width:635px;"><span></span><a href="/xueshuchengguo/xueshulunwen/#id1527" title="content"
+                                                             target="_blank">content4 </a> <span class="riqi"
+                                                                                                 style="text-align:right;">[2017-06-28]</span>
+                    </li>
+                    <li style="width:635px;"><span></span><a href="/xueshuchengguo/xueshulunwen/#id1525" title="content"
+                                                             target="_blank">content5 </a> <span class="riqi"
+                                                                                                 style="text-align:right;">[2017-06-27]</span>
+                    </li>
+                    <li style="width:635px;"><span></span><a href="/xueshuchengguo/xueshulunwen/#id1501" title="content"
+                                                             target="_blank">content6 </a> <span class="riqi"
+                                                                                                 style="text-align:right;">[2017-05-24]</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="xinwendongtai">
+            <div class="dongtaititle">
+                <span></span>
+                <a href="/news/" class="newstab active" data-type="mytab" data-tag="1">新闻动态</a>
+
+                <div class="dongtainews">News</div>
+            </div>
+            <div class="dongtaixinwen" data-type="mytab_body" data-tag="1">
+                <ul>
+
+
+                    <li><span></span><a href="javascript:;" title="content" target="_blank">content</a> <span
+                            class="riqi">[2017-10-05]</span></li>
+
+
+                    <li><span></span><a href="javascript:;" title="content" target="_blank">content</a> <span
+                            class="riqi">[2017-09-23]</span></li>
+
+
+                    <li><span></span><a href="/news/2017/2017-09-09/1557.html" title="content"
+                                        target="_blank">content</a> <span class="riqi">[2017-09-09]</span></li>
+
+
+                    <li><span></span><a href="/news/2017/2017-08-28/1553.html" title="content"
+                                        target="_blank">content</a> <span class="riqi">[2017-08-28]</span></li>
+
+
+                    <li><span></span><a href="/news/2017/2017-08-28/1552.html" title="content"
+                                        target="_blank">content</a> <span class="riqi">[2017-08-27]</span></li>
+
+
+                    <li><span></span><a href="/news/2017/2017-08-22/1548.html" title="content"
+                                        target="_blank">content</a> <span class="riqi">[2017-08-22]</span></li>
+
+
+                    <li><span></span><a href="/news/2017/2017-07-01/1535.html" title="content"
+                                        target="_blank">content</a> <span class="riqi">[2017-06-30]</span></li>
+
+
+                    <li><span></span><a href="/news/2017/2017-06-29/1529.html" title="content"
+                                        target="_blank">content</a> <span class="riqi">[2017-06-29]</span></li>
+
+
+                    <li><span></span><a href="/news/2017/2017-06-25/1521.html" title="i ❤ LAN ^_^" target="_blank"><font
+                            color='#FF3030'>i ❤ LAN ^_^</font></a> <span class="riqi">[2017-06-25]</span></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="clear:both;margin:0 auto;width:1200px;height:0px;background:white;"></div>
+
+{% endblock %}
+{% block scripts %}
+     <script src="{% static 'js/slider.js' %}"></script>
+{% endblock %}

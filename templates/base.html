@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/daohang.css' %}" type="text/css"><!---->
+    {% block styles %}{% endblock %}
+</head>
+<body>
+<div class="daohang1">
+    <a href="" target="_blank" style="position:absolute;width:1180px;text-align:right;padding:10px;">English</a>
+    <div style="float:left;margin-top:0px"><a href=""><img src="{% static 'img/1.png' %}" height="90" ></a></div>
+    <!-- <div style="float:left;"><a href=""><img src="站徽2.jpg" height="100" /></a></div>
+     <div style="float:left;"><a href=""><img src="zhanming.jpg" height="100" /></a></div>-->
+    <div style="float:left;"><a href=""><img src="{% static 'img/jiqiren2.jpg' %}" height="100"/></a></div>
+    <div style="float:right;"><a href=""><img src="{% static 'img/logo.png' %}" height="90" width="400"/></a></div>
+</div>
+<div class="daohang2">
+    <div class="item zhuye">
+        <a href="index.html">首页</a>
+    </div>
+    <div class="item keyan">
+        <a href="keyanfangxiang/keyanfangxiang.html">科研方向</a>
+        <ul>
+            <li><a href="keyanfangxiang/chengdanxiangmu.html">承担项目</a></li>
+            <li><a href="keyanfangxiang/yiqishebei.html">仪器设备</a></li>
+            <li><a href="keyanfangxiang/xiangguanzazhi.html">相关杂志</a></li>
+        </ul>
+    </div>
+    <div class="item keyan">
+        <a href="xueshuchengguo/xueshuchengguo.html">学术成果</a>
+        <ul>
+            <li><a href="xueshuchengguo/xueshulunwen.html">学术论文</a></li>
+            <li><a href="xueshuchengguo/liangdiangongzuo.html">亮点工作</a></li>
+            <li><a href="xueshuchengguo/fengmianjijin.html">封面集锦</a></li>
+            <li><a href="xueshuchengguo/zhuzuoyizhe.html">著作译著</a></li>
+            <li><a href="xueshuchengguo/famingzhuanli.html">发明专利</a></li>
+            <li><a href="xueshuchengguo/xueshujiangli.html">学术荣誉</a></li>
+        </ul>
+    </div>
+    <div class="item keyan"><a href="shiyanshichengyuan/shiyanshichengyuan.html">实验室成员</a>
+        <ul>
+            <li><a href="shiyanshichengyuan/teacher.html">教师</a></li>
+            <li><a href="shiyanshichengyuan/yanjiuzhuli.html">研究助理</a></li>
+            <li><a href="shiyanshichengyuan/yanjiusheng.html">研究生</a></li>
+            <li><a href="shiyanshichengyuan/benkesheng.html">本科生</a></li>
+            <li><a href="shiyanshichengyuan/yilikairenyuan.html">RIMLer</a></li>
+        </ul>
+    </div>
+    <div class="item keyan"><a href="gallery/gallery.html">实验室文化</a>
+        <ul>
+            <li><a href="gallery/zhinengzhixing.html">智能之星</a></li>
+            <li><a href="gallery/zuijiatuandui.html">最佳团队</a></li>
+            <li><a href="gallery/tebiegongxian.html">特别贡献</a></li>
+            <li><a href="gallery/quanjiafu.html">全家福</a></li>
+            <li><a href="gallery/juhuiyuanzu.html">聚会远足</a></li>
+            <li><a href="gallery/shenghuojianying.html">生活剪影</a></li>
+            <li><a href="gallery/xiaoyuanfengguang.html">校园风光</a></li>
+            <li><a href="gallery/fengmiangushi.html">封面故事</a></li>
+            <li><a href="gallery/chengyuanfengcai.html">成员风采</a></li>
+            <li><a href="gallery/biyeshifen.html">毕业时分</a></li>
+            <li><a href="gallery/libiejiyu.html">离别寄语</a></li>
+            <li><a href="gallery/duzhewenzai.html">读者文摘</a></li>
+        </ul>
+    </div>
+    <div class="item keyan"><a href="xueshuhuodong/xueshuhuodong.html">学术活动</a>
+        <ul>
+            <li><a href="xueshuhuodong/jiqirenluntan.html">机器人论坛</a></li>
+            <li><a href="xueshuhuodong/rengongzhinengshijie.html">人工智能视界</a></li>
+            <li><a href="xueshuhuodong/baijiajiangtan.html">百家讲坛</a></li>
+            <li><a href="xueshuhuodong/xueshulaifang.html">学术来访</a></li>
+            <li><a href="xueshuhuodong/xueshuhuiyi.html">学术会议</a></li>
+            <li><a href="xueshuhuodong/shuangbianjiaoliu.html">双边交流</a></li>
+        </ul>
+    </div>
+    <div class="item keyan"><a href="jiaoxuegongzuo/jiaoxuegongzuo.html">教学工作</a>
+        <ul>
+            <li><a href="jiaoxuegongzuo/benkeshengdaoshi.html">本科生导师</a></li>
+                <li><a href="jiaoxuegongzuo/shenghuozhongderengongzhineng.html">生活中的人工智能</a></li>
+        </ul>
+    </div>
+    <div class="item keyan"><a href="jobs/job.html">招生招聘</a>
+        <ul>
+            <li><a href="jobs/job1.html">博士后</a></li>
+            <li><a href="jobs/job2.html">免试研究生</a></li>
+            <li><a href="jobs/job3.html">统考研究生</a></li>
+            <li><a href="jobs/job4.html">本科生</a></li>
+        </ul>
+    </div>
+    <div class="item gengduo"><a href="gengduo/gengduo.html">更多</a>
+        <ul>
+            <li><a href="gengduo/meihaoyinxiang.html">美好印象</a></li>
+            <li><a href="gengduo/news.html">新闻动态</a></li>
+            <li><a href="gengduo/notice.html">通知公告</a></li>
+            <li><a href="gengduo/team.html">维护团队</a></li>
+            <li><a href="gengduo/contact.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+{% block content %}{% endblock %}
+<div class="bottom">
+    <div class="bottoms">
+        <div class="dizhi" style="line-height:1.5;text-align:center;font-size:14px;">地址：江苏省南京市玄武区孝陵卫街道200号南京理工大学理学院
+            <p>Tel：xxxxxxxxxxx &nbsp;&nbsp;&nbsp;Fax：20000&nbsp;&nbsp;&nbsp;Email：xxxxxxxx@qq.com </p>
+        </div>
+    </div>
+</div>
+{% block scripts %}{% endblock %}
+</body>
+</html>
