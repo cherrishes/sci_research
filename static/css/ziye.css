@@ -1,0 +1,97 @@
+/*.chengyuan{margin-left:25px;}
+.chengyuan li{margin:10px;}
+.chengyuan li a{
+    padding:1px;
+    border:1px solid #ccc;
+    display:block;
+    border-width:0;
+}*/
+.chengyuan li{
+    width:166px;
+    height:250px;
+    float:left;
+    margin:5px 10px;
+    text-align:center;
+}
+
+.chengyuan li a{
+    padding:1px;
+    border:1px solid #ccc;
+    display:block;
+}
+
+.chengyuan li .title{
+    clear:both;
+    height:22px;
+    line-height:22px;
+    width:164px;
+}
+img.pic,
+.pic a img{
+    padding:1px;
+    border:1px solid #ccc;
+}
+
+.clear{clear:both;overflow:hidden;}
+.location{
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 2px solid #dfe0e4;
+}
+.location .location_mark{
+    width:5px;
+    height:25px;
+    float: left;
+    background: #3eb6dd;
+}
+.location div{
+    float:left;
+    margin-left:8px;
+}
+.location div a:hover{
+    color:#e81f1f;
+}
+.leftclassname{
+    margin:10px 10px 0 10px;
+    padding-top:10px;
+    background:white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: default;
+}
+.leftsubclass{
+    margin: 0 10px 10px 10px;
+    background:white;
+}
+.leftsubclass ul{
+    padding:10px 25px;
+}
+.leftsubclass ul li{
+    line-height: 30px;
+}
+.leftsubclass ul li a{
+    display: block;
+}
+
+.leftsubclass ul li a:hover,
+.leftsubclass ul li.active a{
+    color:#cc0000;
+}
+
+.leftsubclass ul li a .b1,
+.leftsubclass ul li a .b2{
+    float:left;
+    margin-right:5px;
+}
+.leftsubclass ul li a .b1{display:block;}
+.leftsubclass ul li a .b2{display:none;}
+.leftsubclass ul li.active a .b1,.leftsubclass ul li a:hover .b1{display:none;}
+.leftsubclass ul li.active a .b2,.leftsubclass ul li a:hover .b2{display:block;}
+
+.leftsubclass2{padding-left:20px;}
+
+#conten{
+    margin-left: 25px;
+
+}

@@ -7,3 +7,6 @@ __author__ = 'rdy'
 
 def home(request):
     return render(request, "home.html", locals())
+
+def member(request):
+    return
