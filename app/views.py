@@ -9,4 +9,7 @@ def home(request):
     return render(request, "home.html", locals())
 
 def member(request):
-    return
+    return render(request, "member/member.html", locals())
+
+def teacher(request):
+    return render(request, "member/teacher.html", locals())
