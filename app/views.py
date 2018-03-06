@@ -13,3 +13,15 @@ def member(request):
 
 def teacher(request):
     return render(request, "member/teacher.html", locals())
+
+def postgraduate(request):
+    return render(request, "member/postgraduate.html", locals())
+
+def undergraduate(request):
+    return render(request, "member/undergraduate.html", locals())
+
+def assistant(request):
+    return render(request, "member/assistant.html", locals())
+
+def RIMLer(request):
+    return render(request, "member/RIMLer.html", locals())
