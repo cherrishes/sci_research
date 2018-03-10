@@ -6,3 +6,72 @@
 {% block styles %}
     <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
 {% endblock %}
+
+{% block content %}
+    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+        <td width="10"></td>
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">实验室成员</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li class=""><a href="teacher"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
+                    <li class=""><a href="assistant"><div class="b1">&gt;</div><div class="b2">o</div> 研究助理</a></li>
+                    <li class=""><a href="postgraduate"><div class="b1">&gt;</div><div class="b2">o</div> 研究生</a></li>
+                    <li class=""><a href="undergraduate"><div class="b1">&gt;</div><div class="b2">o</div> 本科生</a></li>
+                    <li class=""><a href="RIMLer"><div class="b1">&gt;</div><div class="b2">o</div> RIMLer</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                <div>
+                    <b>当前位置：</b>
+                    <a href="/">首页</a>&nbsp;>&nbsp;<a href="member">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate">研究生</a>
+
+                </div>
+            </div>
+            <div class="clear" style="height:10px;"></div>
+            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">研究生                            </div>
+            <ul class="chengyuan">
+                <li>
+                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/399.html"><img src="{% static 'img/postgraduate/IMG_20170719_201455.jpg' %}" width="162" height="212"></a></div>
+                    <div class="title" style="border-bottom-width:0;">杨炯灿</div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/401.html"><img src="{% static 'img/postgraduate/P60409-090039.jpg' %}" width="162" height="212"></a></div>
+                    <div class="title" style="border-bottom-width:0;">赵宇航</div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/403.html"><img src="{% static 'img/postgraduate/绘图1.jpg' %}" width="162" height="212"></a></div>
+                    <div class="title" style="border-bottom-width:0;">张灏</div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/404.html"><img src="{% static 'img/postgraduate/QQ图片20170719150426.jpg' %}" width="162" height="212"></a></div>
+                    <div class="title" style="border-bottom-width:0;">丁伟</div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-19/414.html"><img src="{% static 'img/postgraduate/IMG201309150190.jpg' %}" width="162" height="212"></a></div>
+                    <div class="title" style="border-bottom-width:0;">匡也</div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2015-06-24/946.html"><img src="{% static 'img/postgraduate/QQ图片20170719184403.jpg' %}" width="162" height="212"></a></div>
+                    <div class="title" style="border-bottom-width:0;">王伟</div>
+                </li>
+
+            </ul>
+
+            <div class="clear" style="height:10px;"></div>
+            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+            <div class="clear" style="height:20px;"></div>
+        </td>
+    </tr>
+ </table>
+<div class="clear"></div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}
