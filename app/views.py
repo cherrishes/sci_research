@@ -70,3 +70,42 @@ def yiqishebei(request):
 
 def xiangguanzazhi(request):
     return render(request, "keyanfangxiang/xiangguanzazhi.html", locals())
+
+def shiyanshiwenhua(request):
+    return render(request, "shiyanshiwenhua/shiyanshiwenhua.html", locals())
+
+def zhinengzhixing(request):
+    return render(request, "shiyanshiwenhua/zhinengzhixing.html", locals())
+
+def zuijiatuandui(request):
+    return render(request, "shiyanshiwenhua/zuijiatuandui.html", locals())
+
+def tebiegongxian(request):
+    return render(request, "shiyanshiwenhua/tebiegongxian.html", locals())
+
+def quanjiafu(request):
+    return render(request, "shiyanshiwenhua/quanjiafu.html", locals())
+
+def juhuiyuanzu(request):
+    return render(request, "shiyanshiwenhua/juhuiyuanzu.html", locals())
+
+def shenghuojianying(request):
+    return render(request, "shiyanshiwenhua/shenghuojianying.html", locals())
+
+def xiaoyuanfengguang(request):
+    return render(request, "shiyanshiwenhua/xiaoyuanfengguang.html", locals())
+
+def fengmiangushi(request):
+    return render(request, "shiyanshiwenhua/fengmiangushi.html", locals())
+
+def chengyuanfengcai(request):
+    return render(request, "shiyanshiwenhua/chengyuanfengcai.html", locals())
+
+def biyeshifen(request):
+    return render(request, "shiyanshiwenhua/biyeshifen.html", locals())
+
+def libiejiyu(request):
+    return render(request, "shiyanshiwenhua/libiejiyu.html", locals())
+
+def duzhewenzai(request):
+    return render(request, "shiyanshiwenhua/duzhewenzai.html", locals())
