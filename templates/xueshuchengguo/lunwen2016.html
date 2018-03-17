@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}lunwen2016{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+
+   <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+        <td width="10"></td>
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">学术论文</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li ><a href="daibiaoxinglunwen"><div class="b1">&gt;</div><div class="b2">o</div> 代表性论文</a></li>
+                    <li ><a href="lunwen2018"><div class="b1">&gt;</div><div class="b2">o</div> 2018年</a></li>
+                    <li ><a href="lunwen2017"><div class="b1">&gt;</div><div class="b2">o</div> 2017年</a></li>
+                    <li class="active"><a href="lunwen2016"><div class="b1">&gt;</div><div class="b2">o</div> 2016年</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                <div>
+                    <b>当前位置：</b>
+                    <a href="/">首页</a>&nbsp;>&nbsp;<a href="xueshuchengguo">学术成果</a>&nbsp;>&nbsp;<a href="xueshulunwen">学术论文</a>&nbsp;>&nbsp;<a href="lunwen2016">2016</a>
+                </div>
+            </div>
+
+<div class="clear" style="height:20px;"></div>
+        </td>
+    </tr>
+ </table>
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+
+
+
+
+{% endblock %}
+{% block scripts %}
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}科研方向{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+
+   <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+        <td width="10"></td>
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">科研方向</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li><a href="chengdanxiangmu"><div class="b1">&gt;</div><div class="b2">o</div> 承担项目</a></li>
+                    <li><a href="yiqishebei"><div class="b1">&gt;</div><div class="b2">o</div> 仪器设备</a></li>
+                    <li><a href="xiangguanzazhi"><div class="b1">&gt;</div><div class="b2">o</div> 相关杂志</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                <div>
+                    <b>当前位置：</b>
+                   <a href="/">首页</a>&nbsp;&gt;&nbsp;<a href="keyanfangxiang">科研方向
+                </div>
+            </div>
+            <div class="clear" style="height:20px;"></div>
+        </td>
+    </tr>
+ </table>
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+
+
+
+
+{% endblock %}
+{% block scripts %}
+{% endblock %}
