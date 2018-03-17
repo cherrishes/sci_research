@@ -70,3 +70,6 @@ def yiqishebei(request):
 
 def xiangguanzazhi(request):
     return render(request, "keyanfangxiang/xiangguanzazhi.html", locals())
+
+def xueshuhuodong(request):
+    return render(request, "xueshuhuodong/xueshuhuodong.html", locals())
