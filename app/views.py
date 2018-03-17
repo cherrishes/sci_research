@@ -25,3 +25,48 @@ def assistant(request):
 
 def RIMLer(request):
     return render(request, "member/RIMLer.html", locals())
+
+def xueshuchengguo(request):
+    return render(request, "xueshuchengguo/xueshuchengguo.html", locals())
+
+def xueshulunwen(request):
+    return render(request, "xueshuchengguo/xueshulunwen.html", locals())
+
+def liangdiangongzuo(request):
+    return render(request, "xueshuchengguo/liangdiangongzuo.html", locals())
+
+def fengmianjijin(request):
+    return render(request, "xueshuchengguo/fengmianjijin.html", locals())
+
+def zhuzuoyizhu(request):
+    return render(request, "xueshuchengguo/zhuzuoyizhu.html", locals())
+
+def famingzhuanli(request):
+    return render(request, "xueshuchengguo/famingzhuanli.html", locals())
+
+def xueshujiangli(request):
+    return render(request, "xueshuchengguo/xueshujiangli.html", locals())
+
+def daibiaoxinglunwen(request):
+    return render(request, "xueshuchengguo/daibiaoxinglunwen.html", locals())
+
+def lunwen2017(request):
+    return render(request, "xueshuchengguo/lunwen2017.html", locals())
+
+def lunwen2018(request):
+    return render(request, "xueshuchengguo/lunwen2018.html", locals())
+
+def lunwen2016(request):
+    return render(request, "xueshuchengguo/lunwen2016.html", locals())
+
+def keyanfangxiang(request):
+    return render(request, "keyanfangxiang/keyanfangxiang.html", locals())
+
+def chengdanxiangmu(request):
+    return render(request, "keyanfangxiang/chengdanxiangmu.html", locals())
+
+def yiqishebei(request):
+    return render(request, "keyanfangxiang/yiqishebei.html", locals())
+
+def xiangguanzazhi(request):
+    return render(request, "keyanfangxiang/xiangguanzazhi.html", locals())

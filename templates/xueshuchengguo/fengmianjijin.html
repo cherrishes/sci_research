@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}封面集锦{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+
+    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+        <td width="10"></td>
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname"></div>
+            <div class="leftsubclass">
+                <ul>
+                    <li ><a href="xueshuchengguo"><div class="b1">&gt;</div><div class="b2">o</div> 学术成果</a></li>
+                    <li ><a href="xueshulunwen"><div class="b1">&gt;</div><div class="b2">o</div> 学术论文</a></li>
+                    <li><a href="liangdiangongzuo"><div class="b1">&gt;</div><div class="b2">o</div> 亮点工作</a></li>
+                    <li><a href="fengmianjijin"><div class="b1">&gt;</div><div class="b2">o</div> 封面集锦</a></li>
+                    <li><a href="zhuzuoyizhu"><div class="b1">&gt;</div><div class="b2">o</div> 著作译著</a></li>
+                    <li><a href="famingzhuanli"><div class="b1">&gt;</div><div class="b2">o</div> 发明专利</a></li>
+                    <li><a href="xueshujiangli"><div class="b1">&gt;</div><div class="b2">o</div> 学术荣誉</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                <div>
+                    <b>当前位置：</b>
+                   <a href="/">首页</a>&nbsp;>&nbsp;<a href="xueshuchengguo">学术成果</a>&nbsp;>&nbsp;封面集锦
+                </div>
+            </div>
+            <div class="clear" style="height:10px;"></div>
+
+<div class="clear" style="height:20px;"></div>
+        </td>
+    </tr>
+ </table>
+
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+
+
+
+
+{% endblock %}
+{% block scripts %}
+{% endblock %}
