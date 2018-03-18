@@ -109,3 +109,12 @@ def libiejiyu(request):
 
 def duzhewenzai(request):
     return render(request, "shiyanshiwenhua/duzhewenzai.html", locals())
+
+def jiaoxuegongzuo(request):
+    return render(request, "jiaoxuegongzuo/jiaoxuegongzuo.html", locals())
+
+def benkeshengdaoshi(request):
+    return render(request, "jiaoxuegongzuo/benkeshengdaoshi.html", locals())
+
+def rengongzhineng(request):
+    return render(request, "jiaoxuegongzuo/rengongzhineng.html", locals())
