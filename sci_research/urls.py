@@ -30,4 +30,5 @@ urlpatterns = patterns('',
     url(r'^yiqishebei$', 'app.views.yiqishebei', name='yiqishebei'),
     url(r'^xiangguanzazhi$', 'app.views.xiangguanzazhi', name='xiangguanzazhi'),
     url(r'^xueshuhuodong$', 'app.views.xueshuhuodong', name='xueshuhuodong'),
+    url(r'^job$', 'app.views.job', name='job'),
 )

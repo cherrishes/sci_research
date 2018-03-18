@@ -73,3 +73,6 @@ def xiangguanzazhi(request):
 
 def xueshuhuodong(request):
     return render(request, "xueshuhuodong/xueshuhuodong.html", locals())
+
+def job(request):
+    return render(request, "jobs/job.html", locals())
