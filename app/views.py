@@ -125,3 +125,6 @@ def benkeshengdaoshi(request):
 
 def rengongzhineng(request):
     return render(request, "jiaoxuegongzuo/rengongzhineng.html", locals())
+
+def more(request):
+    return render(request, "more/more.html", locals())
