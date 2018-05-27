@@ -15,7 +15,7 @@ def teacher(request):
     return render(request, "member/teacher.html", locals())
 
 def postgraduate(request):
-    return render(request, "member/postgraduate.html", locals())
+    return render(request, "member/postgraduate/postgraduate.html", locals())
 
 def undergraduate(request):
     return render(request, "member/undergraduate.html", locals())
@@ -128,3 +128,6 @@ def rengongzhineng(request):
 
 def more(request):
     return render(request, "more/more.html", locals())
+
+def yangjiongshan(request):
+    return render(request, "member/postgraduate/yangjiongshan.html", locals())
