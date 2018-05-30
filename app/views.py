@@ -15,7 +15,7 @@ def teacher(request):
     return render(request, "member/teacher.html", locals())
 
 def postgraduate(request):
-    return render(request, "member/postgraduate.html", locals())
+    return render(request, "member/postgraduate/postgraduate.html", locals())
 
 def undergraduate(request):
     return render(request, "member/undergraduate.html", locals())
@@ -125,3 +125,24 @@ def benkeshengdaoshi(request):
 
 def rengongzhineng(request):
     return render(request, "jiaoxuegongzuo/rengongzhineng.html", locals())
+
+def more(request):
+    return render(request, "more/more.html", locals())
+
+def yangjiongshan(request):
+    return render(request, "member/postgraduate/yangjiongshan.html", locals())
+
+def zhaoyuhang(request):
+    return render(request, "member/postgraduate/zhaoyuhang.html", locals())
+
+def zhangjing(request):
+    return render(request, "member/postgraduate/zhangjing.html", locals())
+
+def dingwei(request):
+    return render(request, "member/postgraduate/dingwei.html", locals())
+
+def kuangye(request):
+    return render(request, "member/postgraduate/kuangye.html", locals())
+
+def wangwei(request):
+    return render(request, "member/postgraduate/wangwei.html", locals())

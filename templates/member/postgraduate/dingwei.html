@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}研究生{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+        <td width="10"></td>
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">实验室成员</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li class=""><a href="teacher" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
+                    <li class=""><a href="assistant" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 研究助理</a></li>
+                    <li class=""><a href="postgraduate
+" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 研究生</a></li>
+                    <li class=""><a href="undergraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 本科生</a></li>
+                    <li class=""><a href="RIMLer" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> RIMLer</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                <div>
+                    <b>当前位置：</b>
+                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">研究生</a>>&nbsp;<a href="" style="text-decoration: none">丁伟</a>
+
+                </div>
+            </div>
+            <div class="clear" style="height:10px;"></div>
+            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">丁伟              </div>
+            <ul class="chengyuan">
+                <li>
+                      <div class="pic"><a href=""><img src="{% static 'img/postgraduate/QQ图片20170719150426.jpg' %}" width="162" height="212"></a></div>
+                </li>
+
+            </ul>
+             <div>
+                 <p>自我评价：
+                 我是一个自信而坚韧的人，喜欢阅读和看电影。在二十年的学习生活中，我认为学习最重要的是独立思考，自己认真思考的结果哪怕被验证是错的，对自己来说也会有很大的提高。</p>
+                 <p>个人箴言：博观而约取，厚积而薄发</p>
+                 <p>
+                     <ui>
+                         个人简历：<li>1992年3月 出生于陕西西安</li>
+                         <li>2011年9月 进入南京理工大学理学院工程力学系</li>
+                         <li>2015年9月 考上南理工理学院工程力学系研究生</li>
+
+                     </ui>
+                 </p>
+                 <p>研究成果：Wei Ding, Yunian Shen, Analysis of transient deformation response for flexible robotic manipulator using assumed mode method, ACIRS 2017, S65</p>
+                 <p>联系方式：wuweidemo@163.com</p>
+             </div>
+            <div class="clear" style="height:10px;"></div>
+            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+            <div class="clear" style="height:20px;"></div>
+        </td>
+    </tr>
+ </table>
+<div class="clear"></div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}
+

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}研究生{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+        <td width="10"></td>
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">实验室成员</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li class=""><a href="teacher" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
+                    <li class=""><a href="assistant" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 研究助理</a></li>
+                    <li class=""><a href="postgraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 研究生</a></li>
+                    <li class=""><a href="undergraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 本科生</a></li>
+                    <li class=""><a href="RIMLer" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> RIMLer</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                <div>
+                    <b>当前位置：</b>
+                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">研究生</a>>&nbsp;<a href="" style="text-decoration: none">张灏</a>
+
+                </div>
+            </div>
+            <div class="clear" style="height:10px;"></div>
+            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">张灏               </div>
+            <ul class="chengyuan">
+                <li>
+                     <div class="pic"><a href=""><img src="{% static 'img/postgraduate/绘图1.jpg' %}" width="162" height="212"></a></div>
+                </li>
+
+            </ul>
+             <div>
+                 <p>自我评价：
+                 通过研究生阶段的学习，我对钢结构动力学问题有了一定了研究。尤其是对于空间复杂的钢结构模型的建立，模型的离散有深入的学习和研究。目前的研究方向是，钢结构模型的自动化动力学计算。</p>
+                 <p>
+                     <ui>
+                         个人简历：<li>1992年3月出生于山西省长治市</li>
+                         <li>2011年9月考入南京理工大学工程力学系</li>
+                         <li>2015年9月考入南京理工大学固体力学系研究生</li>
+                         <li>2017年4月参加机械工程与控制自动化国际学术会议2017(ICMECA2017)</li>
+                     </ui>
+                 </p>
+                 <p>研究成果：发表论文《Vibration behavior analysis for simply supported beam under multiple moving vibrating systems》</p>
+                 <p>联系方式：15952022034</p>
+             </div>
+            <div class="clear" style="height:10px;"></div>
+            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+            <div class="clear" style="height:20px;"></div>
+        </td>
+    </tr>
+ </table>
+<div class="clear"></div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}
+

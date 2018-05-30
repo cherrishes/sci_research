@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}更多{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+        <td width="10"></td>
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">更多</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li class=""><a href="" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 美好印象</a></li>
+                    <li class=""><a href="assistant" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 新闻动态</a></li>
+                    <li class=""><a href="postgraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 通知公告</a></li>
+                    <li class=""><a href="undergraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 维护团队</a></li>
+                    <li class=""><a href="RIMLer" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 联系我们</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                <div>
+                    <b>当前位置：</b>
+                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="more" style="text-decoration: none">更多</a>
+                </div>
+            </div>
+
+            <div style="position: relative;left: 50px;top: 10px;"><img src="{% static 'img/ud1.jpg' %}" height="200" width="400"/></div>
+            <div class="clear" style="height:20px;"></div>
+
+</table>
+<div class="clear"></div>
+
+{% endblock %}
+{% block scripts %}
+{% endblock %}
