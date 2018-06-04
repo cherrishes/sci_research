@@ -54,4 +54,5 @@ urlpatterns = patterns('',
     url(r'^dingwei$', 'app.views.dingwei', name='dingwei'),
     url(r'^kuangye$', 'app.views.kuangye', name='kuangye'),
     url(r'^wangwei$', 'app.views.wangwei', name='wangwei'),
+    url(r'^mrshen$', 'app.views.mrshen', name='mrshen'),
 )

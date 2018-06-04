@@ -12,7 +12,7 @@ def member(request):
     return render(request, "member/member.html", locals())
 
 def teacher(request):
-    return render(request, "member/teacher.html", locals())
+    return render(request, "member/teacher/teacher.html", locals())
 
 def postgraduate(request):
     return render(request, "member/postgraduate/postgraduate.html", locals())
@@ -146,3 +146,6 @@ def kuangye(request):
 
 def wangwei(request):
     return render(request, "member/postgraduate/wangwei.html", locals())
+
+def mrshen(request):
+    return render(request, "member/teacher/mrshen.html", locals())
