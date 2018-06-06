@@ -21,7 +21,7 @@ def undergraduate(request):
     return render(request, "member/undergraduate.html", locals())
 
 def assistant(request):
-    return render(request, "member/assistant.html", locals())
+    return render(request, "member/dc/dc.html", locals())
 
 def RIMLer(request):
     return render(request, "member/RIMLer.html", locals())
@@ -133,19 +133,37 @@ def yangjiongshan(request):
     return render(request, "member/postgraduate/yangjiongshan.html", locals())
 
 def zhaoyuhang(request):
-    return render(request, "member/postgraduate/zhaoyuhang.html", locals())
+    return render(request, "member/yilikai/zhaoyuhang.html", locals())
 
 def zhangjing(request):
-    return render(request, "member/postgraduate/zhangjing.html", locals())
+    return render(request, "member/yilikai/zhangjing.html", locals())
 
 def dingwei(request):
-    return render(request, "member/postgraduate/dingwei.html", locals())
+    return render(request, "member/yilikai/dingwei.html", locals())
 
 def kuangye(request):
     return render(request, "member/postgraduate/kuangye.html", locals())
 
 def wangwei(request):
-    return render(request, "member/postgraduate/wangwei.html", locals())
+    return render(request, "member/yilikai/wangwei.html", locals())
 
 def mrshen(request):
     return render(request, "member/teacher/mrshen.html", locals())
+
+def yilikai(request):
+    return render(request, "member/yilikai/yilikai.html", locals())
+
+def dc(request):
+    return render(request, "member/dc/dc.html", locals())
+
+def sunhong(request):
+    return render(request, "member/postgraduate/sunhong.html", locals())
+
+def zhangsai(request):
+    return render(request, "member/postgraduate/zhangsai.html", locals())
+
+def zhoujincheng(request):
+    return render(request, "member/postgraduate/zhoujincheng.html", locals())
+
+def zhouyi(request):
+    return render(request, "member/postgraduate/zhouyi.html", locals())
