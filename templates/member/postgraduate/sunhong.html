@@ -2,10 +2,11 @@
 {% load staticfiles %}
 
 
-{% block title %}LANer{% endblock %}
+{% block title %}研究生{% endblock %}
 {% block styles %}
     <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
 {% endblock %}
+
 {% block content %}
     <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
 <table style="margin:0 auto;width:1200px;background:white;">
@@ -14,7 +15,7 @@
         <td width="180" height="400" valign="top" style="background:#f2f2f2;">
             <div class="leftclassname">实验室成员</div>
             <div class="leftsubclass">
-               <ul>
+                <ul>
                     <li class=""><a href="teacher" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
                     <li class=""><a href="dc" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 博士研究生</a></li>
                     <li class=""><a href="postgraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 硕士研究生</a></li>
@@ -30,29 +31,36 @@
                 <i class="location_mark"></i>
                 <div>
                     <b>当前位置：</b>
-                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">RIMLer</a>
+                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">研究生</a>>&nbsp;<a href="yangjiongshan" style="text-decoration: none">孙泓</a>
 
                 </div>
             </div>
             <div class="clear" style="height:10px;"></div>
             <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">RIMLer                            </div>
+            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">孙泓              </div>
             <ul class="chengyuan">
                 <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/399.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/401.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/403.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
+                    <div class="pic"><a href="sunhong"><img src="{% static 'img/postgraduate/sunhong.JPG' %}" width="162" height="212"></a></div>
+
                 </li>
 
             </ul>
 
+            <div class="clear" style="height:10px;"></div>
+             <div>
+                 <p>自我评价：
+                 踏实做事诚实做人是我一直坚持的准则。坚信一分耕耘一分收获，通向未来的路是靠自己一步一步脚踏实地地踩出来的。2016年成功加入实验室以来，一直致力于含裂纹炸药的动力学研究，在老师与同窗的帮助下一直稳步前进，希望未来能更进一步。</p>
+                 <p>个人箴言：凡事预则立，不预则废。</p>
+                 <p>
+                     <ui>
+                         个人简历：<li>1994年出生于湖北省嘉鱼县</li>
+                         <li>2012年进入南京理工大学求学</li>
+                         <li>2016年考入南京理工大学研究生院</li>
+                     </ui>
+                 </p>
+                 <p>个人爱好：玩游戏，看书</p>
+                 <p>联系方式：1661272978@qq.com</p>
+             </div>
             <div class="clear" style="height:10px;"></div>
             <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
             <div class="clear" style="height:20px;"></div>
@@ -62,4 +70,6 @@
 <div class="clear"></div>
 {% endblock %}
 {% block scripts %}
+
 {% endblock %}
+

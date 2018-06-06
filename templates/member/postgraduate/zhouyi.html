@@ -2,10 +2,11 @@
 {% load staticfiles %}
 
 
-{% block title %}LANer{% endblock %}
+{% block title %}研究生{% endblock %}
 {% block styles %}
     <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
 {% endblock %}
+
 {% block content %}
     <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
 <table style="margin:0 auto;width:1200px;background:white;">
@@ -14,7 +15,7 @@
         <td width="180" height="400" valign="top" style="background:#f2f2f2;">
             <div class="leftclassname">实验室成员</div>
             <div class="leftsubclass">
-               <ul>
+                <ul>
                     <li class=""><a href="teacher" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
                     <li class=""><a href="dc" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 博士研究生</a></li>
                     <li class=""><a href="postgraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 硕士研究生</a></li>
@@ -30,29 +31,36 @@
                 <i class="location_mark"></i>
                 <div>
                     <b>当前位置：</b>
-                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">RIMLer</a>
+                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">研究生</a>>&nbsp;<a href="yangjiongshan" style="text-decoration: none">周怡</a>
 
                 </div>
             </div>
             <div class="clear" style="height:10px;"></div>
             <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">RIMLer                            </div>
+            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">周怡              </div>
             <ul class="chengyuan">
                 <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/399.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/401.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/403.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
+                    <div class="pic"><a href="zhouyi"><img src="{% static 'img/postgraduate/zhouyi.jpg' %}" width="162" height="212"></a></div>
+
                 </li>
 
             </ul>
 
+            <div class="clear" style="height:10px;"></div>
+             <div>
+                 <p>自我评价：
+                 独立认真，勤于思辨。在研究生期间通过对学术研究的系统学习，建立了科学条理的学习思维。</p>
+                 <p>个人箴言：认识你自己，凡事勿过度</p>
+                 <p>
+                     <ui>
+                         个人简历：<li>1995年10月出生于江苏省常州市</li>
+                         <li>2013年9月考入南京理工大学工程力学系</li>
+                         <li>2017年9月考入南京理工大学固体力学系研究生</li>
+                     </ui>
+                 </p>
+                 <p>主要工作：目前的研究方向是驱动蛋白在微管上行走的力学响应</p>
+                 <p>联系方式：944969794@qq.com</p>
+             </div>
             <div class="clear" style="height:10px;"></div>
             <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
             <div class="clear" style="height:20px;"></div>
@@ -62,4 +70,6 @@
 <div class="clear"></div>
 {% endblock %}
 {% block scripts %}
+
 {% endblock %}
+

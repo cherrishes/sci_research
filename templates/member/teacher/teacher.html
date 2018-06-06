@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 
-{% block title %}研究助理{% endblock %}
+{% block title %}教师{% endblock %}
 {% block styles %}
     <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
 {% endblock %}
@@ -15,10 +15,11 @@
             <div class="leftclassname">实验室成员</div>
             <div class="leftsubclass">
                 <ul>
-                    <li class=""><a href="teacher" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
-                    <li class=""><a href="assistant" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 研究助理</a></li>
-                    <li class=""><a href="postgraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 研究生</a></li>
+                    <li class=""><a href="" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
+                    <li class=""><a href="dc" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 博士研究生</a></li>
+                    <li class=""><a href="postgraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 硕士研究生</a></li>
                     <li class=""><a href="undergraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 本科生</a></li>
+                    <li class=""><a href="yilikai" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 已离开人员</a></li>
                     <li class=""><a href="RIMLer" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> RIMLer</a></li>
                 </ul>
             </div>
@@ -29,26 +30,18 @@
                 <i class="location_mark"></i>
                 <div>
                     <b>当前位置：</b>
-                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">研究助理</a>
+                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="../postgraduate" style="text-decoration: none">教师</a>
 
                 </div>
             </div>
             <div class="clear" style="height:10px;"></div>
             <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">研究助理                            </div>
+            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">教师                            </div>
             <ul class="chengyuan">
                 <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/399.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
+                    <div class="pic"><a href="mrshen"><img src="{% static 'img/teacher/沈.jpg' %}" width="162" height="212"></a></div>
+                    <div class="title" style="border-bottom-width:0;">沈煜年</div>
                 </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiusheng/2014-12-17/401.html"><img src="{% static 'img/postgraduate/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-
-            </ul>
-
             <div class="clear" style="height:10px;"></div>
             <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
             <div class="clear" style="height:20px;"></div>
