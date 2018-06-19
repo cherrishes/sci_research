@@ -2,13 +2,14 @@
 {% load staticfiles %}
 
 
-{% block title %}首页{% endblock %}
+{% block title %}欢迎来到沈煜年课题组{% endblock %}
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/xinwen.css' %}" type="text/css">
     <link href="{% static 'css/datu.css' %}" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
+
     <div id="box">
         <div class="slide">
             <ul>
@@ -68,6 +69,8 @@
             <div class="dongtaititle">
                 <span></span>
                 <a href="/news/" class="newstab active" data-type="mytab" data-tag="1">新闻动态</a>
+                <a href="/notice/" class="newstab" data-type="mytab" data-tag="2">通知公告</a>
+
 
                 <div class="dongtainews">News</div>
             </div>
