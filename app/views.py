@@ -167,3 +167,12 @@ def zhoujincheng(request):
 
 def zhouyi(request):
     return render(request, "member/postgraduate/zhouyi.html", locals())
+
+def d416(request):
+    return render(request, "news/d416.html", locals())
+
+def d1228(request):
+    return render(request, "news/d1228.html", locals())
+
+def d1220(request):
+    return render(request, "news/d1220.html", locals())
