@@ -65,5 +65,8 @@ urlpatterns = patterns('',
     url(r'^d1228$', 'app.views.d1228', name='d1228'),
     url(r'^d1220$', 'app.views.d1220', name='d1220'),
     url(r'^chenkang$', 'app.views.chenkang', name='chenkang'),
+    url(r'^liyong$', 'app.views.liyong', name='liyong'),
+    url(r'^jinchunlei$', 'app.views.jinchunlei', name='jinchenlei'),
+    url(r'^abdulazeez$', 'app.views.abdulazeez', name='abdulazeez'),
 
 )

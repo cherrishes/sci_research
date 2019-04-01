@@ -235,3 +235,12 @@ def d1220(request):
 
 def chenkang(request):
     return render(request, "member/postgraduate/chenkang.html", locals())
+
+def liyong(request):
+    return render(request, "member/postgraduate/liyong.html", locals())
+
+def jinchunlei(request):
+    return render(request, "member/postgraduate/jinchunlei.html", locals())
+
+def abdulazeez(request):
+    return render(request, "member/postgraduate/abdulazeez.html", locals())
