@@ -232,3 +232,6 @@ def d1228(request):
 
 def d1220(request):
     return render(request, "news/d1220.html", locals())
+
+def chenkang(request):
+    return render(request, "member/postgraduate/chenkang.html", locals())
