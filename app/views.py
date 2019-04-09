@@ -244,3 +244,18 @@ def jinchunlei(request):
 
 def abdulazeez(request):
     return render(request, "member/postgraduate/abdulazeez.html", locals())
+
+def d722(request):
+    return render(request, "news/d722.html", locals())
+
+def d1125(request):
+    return render(request, "news/d1125.html", locals())
+
+def d419(request):
+    return render(request, "news/d419.html", locals())
+
+def d624(request):
+    return render(request, "news/d624.html", locals())
+
+def d825(request):
+    return render(request, "news/d825.html", locals())

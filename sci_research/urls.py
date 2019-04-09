@@ -68,5 +68,10 @@ urlpatterns = patterns('',
     url(r'^liyong$', 'app.views.liyong', name='liyong'),
     url(r'^jinchunlei$', 'app.views.jinchunlei', name='jinchenlei'),
     url(r'^abdulazeez$', 'app.views.abdulazeez', name='abdulazeez'),
+url(r'^d722$', 'app.views.d722', name='d722'),
+url(r'^d1125$', 'app.views.d1125', name='d1125'),
+url(r'^d419$', 'app.views.d419', name='d419'),
+url(r'^d624$', 'app.views.d624', name='d624'),
+url(r'^d825$', 'app.views.d825', name='d825'),
 
 )
