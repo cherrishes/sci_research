@@ -232,3 +232,30 @@ def d1228(request):
 
 def d1220(request):
     return render(request, "news/d1220.html", locals())
+
+def chenkang(request):
+    return render(request, "member/postgraduate/chenkang.html", locals())
+
+def liyong(request):
+    return render(request, "member/postgraduate/liyong.html", locals())
+
+def jinchunlei(request):
+    return render(request, "member/postgraduate/jinchunlei.html", locals())
+
+def abdulazeez(request):
+    return render(request, "member/postgraduate/abdulazeez.html", locals())
+
+def d722(request):
+    return render(request, "news/d722.html", locals())
+
+def d1125(request):
+    return render(request, "news/d1125.html", locals())
+
+def d419(request):
+    return render(request, "news/d419.html", locals())
+
+def d624(request):
+    return render(request, "news/d624.html", locals())
+
+def d825(request):
+    return render(request, "news/d825.html", locals())
