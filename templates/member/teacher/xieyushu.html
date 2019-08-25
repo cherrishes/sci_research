@@ -1,0 +1,44 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}谢玉树副教授{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="/member/teacher" style="text-decoration: none">教师</a>>&nbsp;<a href="" style="text-decoration: none">谢玉树</a>
+    </div>
+{% endblock %}
+
+{% block mem_content %}
+   <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">谢玉树               </div>
+
+            <ul class="chengyuan">
+                <li>
+                    <div class="pic"><a href=""><img src="{% static 'img/teacher/xieyushu.jpg' %}"  height="212"></a></div>
+                </li>
+
+            </ul>
+             <div class="ui-project">
+                 <div class="clear" style="height:10px;"></div>
+                 <p><strong style="color: rgb(0, 0, 255); font-family: Georgia, 'Microsoft YaHei'; font-size: medium; line-height: 21px; margin: 0px; padding: 0px;">简介</strong></p>
+                 <p>
+                     谢玉树，副教授，硕士研究生导师，南京理工大学，理学院力学与工程科学系，讲师
+
+                 </p>
+                <p><strong style="color: rgb(0, 0, 255); font-family: Georgia, 'Microsoft YaHei'; font-size: medium; line-height: 21px; margin: 0px; padding: 0px;">研究方向</strong></p>
+                 <p><span style="font-size: medium;">（1）工程力学应用;</span></p>
+                 <p><span style="font-size: medium;">（2）流固耦合分析;</span></p>
+                 <p><span style="font-size: medium;">（3）热弹耦合分析</span></p>
+
+
+                 <p>&nbsp;</p>
+                 <p><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 255);"><span style="margin: 0px; padding: 0px; font-size: medium;"><strong style="margin: 0px; padding: 0px;">教育及工作经历</strong></span></span></p>
+                 <p><font size="3">2007年11月由国家留学基金委员会全额资助拟赴德国亚琛工业大学一般力学研究所作访问学者，为期一年。研究方向为传热过程，热弹耦合，流固耦合，瞬态力学</font></p>
+
+                 
+                <div class="contentpage"></div>
+            </div>
+{% endblock %}
+
+

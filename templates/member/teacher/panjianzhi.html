@@ -1,0 +1,42 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}潘健智老师{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="/member/teacher" style="text-decoration: none">教师</a>>&nbsp;<a href="" style="text-decoration: none">潘健智</a>
+    </div>
+{% endblock %}
+
+{% block mem_content %}
+   <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">潘健智               </div>
+
+            <ul class="chengyuan">
+                <li>
+                    <div class="pic"><a href=""><img src="{% static 'img/teacher/panjianzhi.jpg' %}"  height="212"></a></div>
+                </li>
+
+            </ul>
+             <div class="ui-project">
+                 <div class="clear" style="height:10px;"></div>
+                 <p><strong style="color: rgb(0, 0, 255); font-family: Georgia, 'Microsoft YaHei'; font-size: medium; line-height: 21px; margin: 0px; padding: 0px;">简介</strong></p>
+                 <p>
+                     潘健智，南京理工大学，理学院力学与工程科学系，讲师
+
+                 </p>
+
+
+                 <p>&nbsp;</p>
+                 <p><span style="margin: 0px; padding: 0px; color: rgb(0, 0, 255);"><span style="margin: 0px; padding: 0px; font-size: medium;"><strong style="margin: 0px; padding: 0px;">教育及工作经历</strong></span></span></p>
+                 <p><font size="3">2008/09–2013/11，哈尔滨工业大学，航天学院航天工程与力学系，工学博士</font></p>
+                 <p><font size="3">2004/09–2008/07，吉林大学，数学学院，理论与应用力学专业，理学学士</font></p>
+                 <p><font size="3">2013/12–至今，南京理工大学，理学院力学与工程科学系，讲师</font></p>
+                 <p><font size="3">2017.01-2019.12 主持江苏省自然科学基金青年项目</font></p>
+
+                <div class="contentpage"></div>
+            </div>
+{% endblock %}
+
+

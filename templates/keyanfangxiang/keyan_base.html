@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+    <style>
+    .ui-project p{
+        margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px 0px 0.5em;
+    line-height: 1.75;
+    color: rgb(98, 98, 98);
+    white-space: normal;
+    font-size: medium !important;
+    word-wrap: break-word;
+    text-align: justify;
+    padding-bottom: 0;
+        text-indent: 2em;
+    }
+    </style>
+    {% block keysn_styles %}{% endblock %}
+{% endblock %}
+{% block content %}
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">科学研究</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li><a href="/research/chengdanxiangmu"style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 承担项目</a></li>
+                    <li><a href="/research/yiqishebei"style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 仪器设备</a></li>
+                    <li><a href="/research/xiangguanzazhi"style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 相关杂志</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                {% block cur_position %}
+                {% endblock %}
+
+            </div>
+            <div class="clear" style="height:20px;"></div>
+           <div id="content" style="margin-left:0px;">
+               {% block keyan_content %}{% endblock %}
+
+           </div>
+
+
+        </td>
+    </tr>
+ </table>
+
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;background-color: #f4f4f4"></div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+    $(".research").addClass("nav-active")
+    console.log(1111)
+    </script>
+
+    {% block keyan_scripts %}
+        {% endblock %}
+{% endblock %}
+
+

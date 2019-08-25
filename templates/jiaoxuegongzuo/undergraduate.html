@@ -1,0 +1,17 @@
+{% extends "jiaoxuegongzuo/work_base.html" %}
+{% load staticfiles %}
+
+{% block title %}本科生导师{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;&gt;&nbsp;<a href="/ach/papaer"
+                                                                           style="text-decoration: none">教学工作</a>&nbsp;&gt;&nbsp;本科生导师
+    </div>
+{% endblock %}
+
+{% block work_content %}
+    <div class="pic"><a href=""><img width="55%" src="{% static 'img/jianshezhong.bmp' %}" ></a></div>
+{% endblock %}
+
+

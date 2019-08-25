@@ -1,0 +1,36 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}陈涛老师{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="/member/teacher" style="text-decoration: none">教师</a>>&nbsp;<a href="" style="text-decoration: none">陈涛</a>
+    </div>
+{% endblock %}
+
+{% block mem_content %}
+   <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">陈涛               </div>
+
+            <ul class="chengyuan">
+                <li>
+                    <div class="pic"><a href=""><img src="{% static 'img/teacher/chentao.png' %}"  height="212"></a></div>
+                </li>
+
+            </ul>
+             <div class="ui-project">
+                 <div class="clear" style="height:10px;"></div>
+                 <p><strong style="color: rgb(0, 0, 255); font-family: Georgia, 'Microsoft YaHei'; font-size: medium; line-height: 21px; margin: 0px; padding: 0px;">简介</strong></p>
+                 <p>
+                     陈涛，讲师，博士。研究领域为发射装药安全性理论与试验评估技术、内弹道两相流动力学、工程力学实验技术，承担多项国防重大项目，出版专著1部，发表论文20多篇，发明专利10多项，协助接待外国专家及学术交流10多次。
+                 </p>
+
+
+
+
+                <div class="contentpage"></div>
+            </div>
+{% endblock %}
+
+

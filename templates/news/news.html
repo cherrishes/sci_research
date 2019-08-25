@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    新闻动态
+{% endblock %}
+
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet"/>
+
+    <style>
+        .ui-project p {
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding: 0px 0px 0.5em;
+            line-height: 1.75;
+            color: rgb(98, 98, 98);
+            white-space: normal;
+            font-size: medium !important;
+            word-wrap: break-word;
+            text-align: justify;
+            padding-bottom: 0;
+            text-indent: 2em;
+        }
+    </style>
+
+{% endblock %}
+{% block content %}
+
+    <div style="clear:both;margin:0 auto;width:1200px;height:10px;"></div>
+    <table style="margin:0 auto;width:1200px;background:white;">
+        <tr>
+
+            <td width="10"></td>
+            <td valign="top">
+                <div class="location">
+                    <i class="location_mark"></i>
+                    <div>
+                        <b>当前位置：</b>
+                        <a href="/" style="text-decoration: none">更多</a>&nbsp;&gt;&nbsp;<a href="/ach/papaer"
+                                                                                           style="text-decoration: none">新闻动态</a>
+                    </div>
+
+                </div>
+                <div class="clear" style="height:20px;"></div>
+                <div id="content" style="margin-left:0px;">
+                    <div id="wsite-content" class="wsite-elements wsite-not-footer">
+
+        <div style="padding:0 20px;height:50px;line-height:50px;font-size:28px;color:#c50000;">新闻动态</div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+
+
+        <div class="ui-project ui-paper">
+            <ul>
+                <li>
+                    <h3>柔性梁含摩擦斜碰撞的刚体－弹簧－质点混合模型研究</h3>
+                    <p>作 者：沈煜年，顾金红</p>
+                    <p>发表期刊：振动工程学报 第29卷 第1期</p>
+                    <p>发表时间：2016年2月</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>压电周期性结构滤波特性的计算模型研究</h3>
+                    <p>作 者：沈煜年，胡擎，尹晓春</p>
+                    <p>发表期刊：中国科技论文在线</p>
+                    <p>发表时间：2015年12月</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>多芯片双面PCB的热应力分析</h3>
+                    <p>作 者：王兴久，沈煜年</p>
+                    <p>发表期刊：南京理工大学学报(自然科学版)第34卷 第2期</p>
+                    <p>发表时间：2010年4月</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+                </div>
+
+
+            </td>
+        </tr>
+    </table>
+
+
+    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background-color: #f4f4f4"></div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+        $(".more").addClass("nav-active")
+
+    </script>
+
+
+{% endblock %}
+
+

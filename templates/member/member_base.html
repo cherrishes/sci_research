@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+
+    <style>
+    .ui-project p{
+        margin-top: 10px;
+        margin-bottom: 0;
+        line-height: 1.75;
+        color: rgb(98, 98, 98);
+        white-space: normal;
+        font-size: medium !important;
+        word-wrap: break-word;
+        text-align: justify;
+        padding: 0;
+        text-indent: 2em;
+    }
+    </style>
+    {% block mem_styles %}{% endblock %}
+{% endblock %}
+{% block content %}
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">实验室成员</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li><a href="/member/teacher" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 教师</a></li>
+                    <li><a href="/member/scholars" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 访问学者</a></li>
+                    <li><a href="/member/post_doctoral"style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 博士后</a></li>
+                    <li><a href="/member/doctor" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 博士研究生</a></li>
+                    <li><a href="/member/postgraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 硕士研究生</a></li>
+                    <li><a href="/member/undergraduate" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 本科生</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                {% block cur_position %}
+                {% endblock %}
+
+            </div>
+            <div class="clear" style="height:20px;"></div>
+           <div id="content" style="margin-left:0px;">
+               {% block mem_content %}{% endblock %}
+
+           </div>
+
+
+        </td>
+    </tr>
+ </table>
+
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;background-color: #f4f4f4"></div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+    $(".libra").addClass("nav-active")
+
+    </script>
+
+    {% block mem_scripts %}
+        {% endblock %}
+{% endblock %}
+
+

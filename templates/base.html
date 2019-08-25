@@ -10,13 +10,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="keywords"content="沈煜年教授课题组,南京理工大学大学沈煜年课题组,南京理工机器人学与智能机器实验室,沈煜年,机器人,智能机器，摩擦，接触碰撞">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/daohang.css' %}" type="text/css"><!---->
+
     {% block styles %}{% endblock %}
 </head>
 <body>
 <div class="daohang1">
     <a href="" target="_blank" style="position:absolute;width:1180px;text-align:right;padding:10px;">English</a>
-    <div style="float:left;margin-top:0px"><a href=""><img src="{% static 'img/1.png' %}" height="90" width="500" ></a></div>
+    <div style="float:left;margin-top:0px"><a href=""><img src="{% static 'img/new_lab.png' %}" height="90" width="500" ></a></div>
     <!-- <div style="float:left;"><a href=""><img src="站徽2.jpg" height="100" /></a></div>
      <div style="float:left;"><a href=""><img src="zhanming.jpg" height="100" /></a></div>-->
     <div style="float:left;"><a href=""><img src="{% static 'img/jiqiren2.jpg' %}" height="100"/></a></div>
@@ -27,82 +29,104 @@
     <div class="item zhuye">
         <a href="/">首页</a>
     </div>
-    <div class="item keyan">
-        <a href="keyanfangxiang">科研方向</a>
+    <div class="item keyan about">
+        <a href="/about/lab_profile">关于我们</a>
         <ul>
-            <li><a href="chengdanxiangmu">承担项目</a></li>
-            <li><a href="yiqishebei">仪器设备</a></li>
-            <li><a href="xiangguanzazhi">相关杂志</a></li>
+            <li><a href="/about/lab_profile">实验室简介</a></li>
+            <li><a href="/about/history">发展历史</a></li>
+            <li><a href="/about/lab_idea">发展理念</a></li>
+            <li><a href="/about/contact">联系我们</a></li>
         </ul>
     </div>
-    <div class="item keyan">
-        <a href="xueshuchengguo">学术成果</a>
+    <div class="item keyan research">
+        <a href="/research/chengdanxiangmu">科学研究</a>
         <ul>
-            <li><a href="xueshulunwen">学术论文</a></li>
-            <li><a href="liangdiangongzuo">亮点工作</a></li>
-            <li><a href="fengmianjijin">封面集锦</a></li>
-            <li><a href="zhuzuoyizhu">著作译著</a></li>
-            <li><a href="famingzhuanli">发明专利</a></li>
-            <li><a href="xueshujiangli">学术荣誉</a></li>
+
+            <li><a href="/research/chengdanxiangmu">承担项目</a></li>
+            <li><a href="/research/yiqishebei">仪器设备</a></li>
+            <li><a href="/research/xiangguanzazhi">相关杂志</a></li>
         </ul>
     </div>
-    <div class="item keyan"><a href="member">实验室成员</a>
+    <div class="item keyan xueshu">
+        <a href="/ach/paper">学术成果</a>
         <ul>
-            <li><a href="teacher">教师</a></li>
-            <li><a href="dc">博士研究生</a></li>
-            <li><a href="postgraduate">在读硕士研究生</a></li>
-            <li><a href="undergraduate">本科生</a></li>
-            <li><a href="yilikai">已离开硕士生</a></li>
-            <li><a href="RIMLer">RIMLer</a></li>
+            <li><a href="/ach/paper">学术论文</a></li>
+            <li><a href="/ach/translate">著作译著</a></li>
+            <li><a href="/ach/patent">发明专利</a></li>
+            <li><a href="/ach/honor">学术荣誉</a></li>
+            <li><a href="/ach/sample">产品样机</a></li>
+{#            <li><a href="liangdiangongzuo">亮点工作</a></li>#}
+            <li><a href="/ach/cover">封面集锦</a></li>
+
+
+
         </ul>
     </div>
-    <div class="item keyan"><a href="shiyanshiwenhua">实验室文化</a>
+    <div class="item keyan libra"><a href="/member">实验室成员</a>
         <ul>
-            <li><a href="zhinengzhixing">智能之星</a></li>
-            <li><a href="zuijiatuandui">最佳团队</a></li>
-            <li><a href="tebiegongxian">特别贡献</a></li>
-            <li><a href="quanjiafu">全家福</a></li>
+            <li><a href="/member/teacher">教师</a></li>
+             <li><a href="/member/scholars">访问学者</a></li>
+             <li><a href="/member/post_doctoral">博士后</a></li>
+            <li><a href="/member/doctor">博士研究生</a></li>
+            <li><a href="/member/postgraduate">硕士研究生</a></li>
+            <li><a href="/member/undergraduate">本科生</a></li>
+{#            <li><a href="yilikai">已离开硕士生</a></li>#}
+{#            <li><a href="RIMLer">RIMLer</a></li>#}
+        </ul>
+    </div>
+    <div class="item keyan culture"><a href="shiyanshiwenhua">实验室文化</a>
+        <ul>
+            <li class="second-menu"><a href="#">RIML之星</a>
+{#                <ul class="third-menu">#}
+{#                    <li><a href="zhinengzhixing">学术之星</a></li>#}
+{#                    <li><a href="zuijiatuandui">发展之星</a></li>#}
+{#                    <li><a href="quanjiafu">进步之星</a></li>#}
+{#                </ul>#}
+            </li>
+            <li><a href="zuijiatuandui">卓越学子</a>
+{#                <ul>#}
+{#                    <li><a href="zhinengzhixing">国家奖学金获得者</a></li>#}
+{#                    <li><a href="zuijiatuandui">学校奖学金获得者</a></li>#}
+{#                    <li><a href="quanjiafu">科研基金获得者</a></li>#}
+{#                </ul>#}
+            </li>
+            <li><a href="quanjiafu">RIML全家福</a></li>
             <li><a href="juhuiyuanzu">聚会远足</a></li>
-            <li><a href="shenghuojianying">生活剪影</a></li>
-            <li><a href="xiaoyuanfengguang">校园风光</a></li>
-            <li><a href="fengmiangushi">封面故事</a></li>
             <li><a href="chengyuanfengcai">成员风采</a></li>
+            <li><a href="xiaoyuanfengguang">校园风光</a></li>
             <li><a href="biyeshifen">毕业时分</a></li>
-            <li><a href="libiejiyu">离别寄语</a></li>
-            <li><a href="duzhewenzai">读者文摘</a></li>
         </ul>
     </div>
-    <div class="item keyan"><a href="xueshuhuodong">学术活动</a>
+    <div class="item keyan activity"><a href="xueshuhuodong">学术活动</a>
         <ul>
-            <li><a href="xueshuhuodong/jiqirenluntan.html">机器人论坛</a></li>
-            <li><a href="xueshuhuodong/rengongzhinengshijie.html">人工智能视界</a></li>
-            <li><a href="xueshuhuodong/baijiajiangtan.html">百家讲坛</a></li>
-            <li><a href="xueshuhuodong/xueshulaifang.html">学术来访</a></li>
+            <li><a href="xueshuhuodong/jiqirenluntan.html">来访讲座</a></li>
+            <li><a href="xueshuhuodong/rengongzhinengshijie.html">出访活动</a></li>
             <li><a href="xueshuhuodong/xueshuhuiyi.html">学术会议</a></li>
-            <li><a href="xueshuhuodong/shuangbianjiaoliu.html">双边交流</a></li>
+            <li><a href="xueshuhuodong/shuangbianjiaoliu.html">RIML论坛</a></li>
         </ul>
     </div>
-    <div class="item keyan"><a href="jiaoxuegongzuo">教学工作</a>
+    <div class="item keyan work"><a href="jiaoxuegongzuo">教学工作</a>
         <ul>
             <li><a href="benkeshengdaoshi">本科生导师</a></li>
-                <li><a href="rengongzhineng">人工智能</a></li>
+            <li><a href="">科技竞赛</a></li>
+            <li><a href="">课堂教学</a></li>
+            <li><a href="">本科生科研训练</a></li>
         </ul>
     </div>
-    <div class="item keyan"><a href="job">招生招聘</a>
+    <div class="item keyan recruit"><a href="job">招生招聘</a>
         <ul>
             <li><a href="">博士后</a></li>
             <li><a href="">免试研究生</a></li>
             <li><a href="">统考研究生</a></li>
-            <li><a href="">本科生</a></li>
+            <li><a href="">本科科研助理</a></li>
         </ul>
     </div>
-    <div class="item gengduo"><a href="more">更多</a>
+    <div class="item gengduo more"><a href="more">更多</a>
         <ul>
-            <li><a href="">美好印象</a></li>
             <li><a href="">新闻动态</a></li>
             <li><a href="">通知公告</a></li>
             <li><a href="">维护团队</a></li>
-            <li><a href="">联系我们</a></li>
+
         </ul>
     </div>
 </div>
@@ -114,6 +138,8 @@
         </div>
     </div>
 </div>
-{% block scripts %}{% endblock %}
+<script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
+
 </body>
+{% block scripts %}{% endblock %}
 </html>

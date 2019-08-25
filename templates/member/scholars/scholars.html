@@ -1,0 +1,21 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+{% block title %}访问学者-实验室成员{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="#" style="text-decoration: none">访问学者</a>
+    </div>
+{% endblock %}
+{% block mem_content %}
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">访问学者</div>
+    <ul class="chengyuan">
+        <li>
+            <div class="pic"><a href="abdulazeez"><img src="{% static 'img/postgraduate/abdulazeez-min.jpg' %}"
+                                                       width="162"
+                                                       height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">abdulazeez</div>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "xueshuhuodong/activity_base.html" %}
+{% load staticfiles %}
+{% block  act_styles%}
+    <style>
+    .act-pic{
+        text-align: center;
+    }
+    .act-pic img{
+        max-height: 400px;
+    }
+    </style>
+{% endblock %}
+
+{% block title %}学术活动{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">学术活动</a>&nbsp;>&nbsp;<a href="/member/teacher" style="text-decoration: none">出访活动</a>>
+    </div>
+{% endblock %}
+
+{% block act_content %}
+   <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">参加“第十五届苏港力学及其应用论坛”并做分会场报告               </div>
+
+
+             <div class="ui-project">
+                 <div class="act-pic"><img src="{% static 'img/activity/20190413-1.jpg' %}"  ></div>
+                 <p>
+                     2019年4月13日，“第十五届苏港力学及其应用论坛”在香港举行，论坛由香港力学学会和江苏省力学学会联合主办，香港城市大学和香港科技大学共同承办。来自香港力学学会和江苏省力学学会的80多位力学专家、青年学者和学生参加了论坛。香港力学学会副理事长、香港科技大学教授王刚主持开幕式。
+                 </p>
+                 <div class="act-pic"><img src="{% static 'img/activity/20190413-2.jpg' %}"  ></div>
+                 <p>
+                    论坛设了6个分会场，实验室沈煜年副教授与参加论坛的学者和学生报告了本实验室RIML在双足机器人行走时的动态卡阻等最新研究成果，通过现场展示、专家的启发和点播、相互之间的提问交流，激发灵感、突破局限、使自己的创新理论得到了补充和完善，提升了RIML的创新能力。会前，RIML沈煜年副教授还访问了香港大学、香港理工大学和香港城市大学的土木工程、机械工程系以及相关实验室，大家就进行了深入交流，在参观访问期间，与来自不同地区和不同单位的学者对工程力学、电子机械、流体力学、材料力学、生物力学等学术研究方面进行了深入交流，对校园文化、工作环境、工作机制、实验室共享等方面也进行了深入体验。
+                 </p>
+                <div class="contentpage"></div>
+            </div>
+{% endblock %}
+
+

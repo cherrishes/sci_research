@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+
+    <style>
+    .ui-project p{
+        margin-top: 10px;
+        margin-bottom: 0;
+        line-height: 1.75;
+        color: rgb(98, 98, 98);
+        white-space: normal;
+        font-size: medium !important;
+        word-wrap: break-word;
+        text-align: justify;
+        padding: 0;
+        text-indent: 2em;
+    }
+    </style>
+    {% block cul_styles %}{% endblock %}
+{% endblock %}
+{% block content %}
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">实验室文化</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li><a href="/culture/riml_star" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> RIML之星</a></li>
+                    <li><a href="/culture/excellent_star" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 卓越学子</a></li>
+                    <li><a href="/culture/quanjiafu"style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> RIML全家福</a></li>
+                    <li><a href="/culture/juhuiyuanzu" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 聚会远足</a></li>
+                    <li><a href="/culture/chengyuanfengcai" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 成员风采</a></li>
+                    <li><a href="/culture/xiaoyuanfengguang" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 校园风光</a></li>
+                    <li><a href="/culture/biyeshifen" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 毕业时分</a></li>
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                {% block cur_position %}
+                {% endblock %}
+
+            </div>
+            <div class="clear" style="height:20px;"></div>
+           <div id="content" style="margin-left:0px;">
+               {% block cul_content %}{% endblock %}
+
+           </div>
+
+
+        </td>
+    </tr>
+ </table>
+
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;background-color: #f4f4f4"></div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+    $(".culture").addClass("nav-active")
+
+    </script>
+
+    {% block cul_scripts %}
+        {% endblock %}
+{% endblock %}
+
+

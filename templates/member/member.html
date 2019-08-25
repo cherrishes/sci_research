@@ -1,219 +1,145 @@
-{% extends "base.html" %}
+{% extends "member/member_base.html" %}
 {% load staticfiles %}
 
 
 {% block title %}实验室成员{% endblock %}
-{% block styles %}
-    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>
+    </div>
 {% endblock %}
 
-{% block content %}
-    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
-<table style="margin:0 auto;width:1200px;background:white;">
-    <tr>
-        <td width="10"></td>
-        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
-            <div class="leftclassname">实验室成员</div>
-            <div class="leftsubclass">
-                <ul>
-                    <li class=""><a href="teacher" style="text-decoration: none;font-size: 13px" ><div class="b1">&gt;</div><div class="b2" >o</div> 教师</a></li>
-                    <li class=""><a href="dc" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 博士研究生</a></li>
-                    <li class=""><a href="postgraduate" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 在读硕士研究生</a></li>
-                    <li class=""><a href="undergraduate" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 本科生</a></li>
-                    <li class=""><a href="yilikai" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 已离开硕士生</a></li>
-                    <li class=""><a href="RIMLer" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> RIMLer</a></li>
-                </ul>
+{% block mem_content %}
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">教师</div>
+    <ul class="chengyuan">
+        <li>
+            <div class="pic"><a href="/member/teacher/mrshen"><img src="{% static 'img/teacher/shenyinian.jpg' %}"
+                                                   height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">沈煜年 (PI)</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/chentao"><img src="{% static 'img/teacher/chentao.png' %}" width="162" height="212"></a>
             </div>
-        </td>
-        <td width="10"></td>
-        <td valign="top">
-            <div class="location">
-                <i class="location_mark"></i>
-                <div>
-                    <b>当前位置：</b>
-                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>
-                </div>
+            <div class="title" style="border-bottom-width:0;">陈涛</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/xieyushu"><img src="{% static 'img/teacher/xieyushu.jpg' %}" width="162" height="212"></a>
             </div>
-            <div class="clear" style="height:20px;"></div>
-            <div style="padding:0 20px;height:50px;line-height:50px;font-size:28px;color:#c50000;">实验室成员</div>
-            <div style="padding:20px;padding-top:0;">
-                            </div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div class="clear" style="height:10px;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">教师                            </div>
-            <ul class="chengyuan">
-                <li>
-                    <div class="pic"><a href="mrshen"><img src="{% static 'img/teacher/mrs1.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">沈煜年 (PI)</div>
-                </li>
-                <li>
-                    <div class="pic"><a href=""><img src="{% static 'img/teacher/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">陈涛</div>
-                </li>
-                <li>
-                    <div class="pic"><a href=""><img src="{% static 'img/teacher/' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">谢玉树</div>
-                </li>
-            </ul>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">博士研究生                            </div>
-            <ul class="chengyuan">
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiuzhuli/2016-09-09/1268.html"><img src="/d/file/shiyanshichengyuan/yanjiusheng/2016-04-04/73d65eca5359a5fb7896207a4aa96a95.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yanjiuzhuli/2016-09-09/1269.html"><img src="/d/file/shiyanshichengyuan/yanjiusheng/2016-04-04/9a7394db6ae8e6f1b1164bf3ccc1bdd8.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-            </ul>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">在读硕士研究生                            </div>
-            <ul class="chengyuan">
-                <li>
-                    <div class="pic"><a href="yangjiongshan"><img src="{% static 'img/postgraduate/IMG_20170719_201455.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">杨炯灿</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="kuangye"><img src="{% static 'img/postgraduate/IMG201309150190.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">匡也</div>
-                </li>
-                 <li>
-                    <div class="pic"><a href="sunhong"><img src="{% static 'img/postgraduate/sunhong.JPG' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">孙泓</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="zhangsai"><img src="{% static 'img/postgraduate/zhangsai.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">张赛</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="zhoujincheng"><img src="{% static 'img/postgraduate/zhoujincheng.JPG' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">周锦程</div>
-                </li>
-                 <li>
-                    <div class="pic"><a href="zhouyi"><img src="{% static 'img/postgraduate/zhouyi.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">周怡</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="chenkang"><img src="{% static 'img/postgraduate/chenkang.jpg ' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">陈康</div>
-                </li>
-                 <li>
-                    <div class="pic"><a href="liyong"><img src="{% static 'img/postgraduate/liyong.jpg ' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">李庸</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="jinchunlei"><img src="{% static 'img/postgraduate/jinchunlei.jpg ' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">金春雷</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="abdulazeez"><img src="{% static 'img/postgraduate/abdulazeez.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">abdulazeez</div>
-                </li>
+            <div class="title" style="border-bottom-width:0;">谢玉树</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/panjianzhi"><img src="{% static 'img/teacher/panjianzhi.jpg' %}" width="162"
+                                             height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">潘健智</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/zhengjian"><img src="{% static 'img/no-img.jpg' %}" width="162" height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">郑健</div>
+        </li>
+    </ul>
+    <div class="clear" style="height:10px;"></div>
+    <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">访问学者</div>
+    <ul class="chengyuan">
+        <li>
+            <div class="pic"><a href="abdulazeez"><img src="{% static 'img/postgraduate/abdulazeez-min.jpg' %}"
+                                                       width="162"
+                                                       height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">abdulazeez</div>
+        </li>
+    </ul>
+    <div class="clear" style="height:10px;"></div>
+    <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">博士后</div>
+    <p style="text-align: center; color: rgb(98, 98, 98);font-size: medium;">正在完善中</p>
+    <div class="clear" style="height:10px;"></div>
+    <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">博士研究生</div>
+    <p style="text-align: center; color: rgb(98, 98, 98);font-size: medium;">正在完善中</p>
+    <div class="clear" style="height:10px;"></div>
+    <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">硕士研究生</div>
+    <ul class="chengyuan">
 
-            </ul>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">本科生                            </div>
-            <ul class="chengyuan">
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2015-03-23/880.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2015-03-25/71b5d35a2595ef603fc2c7162d9c4dc6.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-06-30/1532.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-26/3ca9d1b40b54825a4b55478f4c628cd4.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-06-30/1533.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-06-30/484fbbbeb28ebc82fedaddd39fa97824.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-10-24/1597.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-24/19393870d29bc7f8340a3ba413c18c80.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-10-24/1598.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-24/89d7de8e3f579e3b1374f1c0a7c4f9a3.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-10-24/1599.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-26/a78fb4619d2eee9572127135805281e5.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-10-24/1600.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-24/e56f4ba7bcb5cfe8e76b38507fc56934.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-10-25/1601.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-26/b5364e4dd4724c8aecd5608b745d6e95.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-10-26/1602.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-26/5280d87d23e4be9dad519d629abef99d.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/benkesheng/2017-10-26/1603.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-26/89249ca7abcb9830a1528c5db887c024.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-            </ul>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-             <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">已离开硕士生                            </div>
-            <ul class="chengyuan">
-                <li>
-                    <div class="pic"><a href="zhaoyuhang"><img src="{% static 'img/postgraduate/P60409-090039.jpg' %} " width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">赵宇航</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="zhangjing"><img src="{% static 'img/postgraduate/绘图1.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">张灏</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="dingwei"><img src="{% static 'img/postgraduate/QQ图片20170719150426.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">丁伟</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="wangwei"><img src="{% static 'img/postgraduate/QQ图片20170719184403.jpg' %}" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">王伟</div>
-                </li>
+        <li>
+            <div class="pic"><a href="zhangsai"><img src="{% static 'img/postgraduate/zhangsai-min.jpg' %}"
+                                                     height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">张赛</div>
+        </li>
+        <li>
+            <div class="pic"><a href="zhoujincheng"><img src="{% static 'img/postgraduate/zhoujincheng-min.jpg' %}"
+                                                         width="162" height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">周锦程</div>
+        </li>
+        <li>
+            <div class="pic"><a href="zhouyi"><img src="{% static 'img/postgraduate/zhouyi-min.jpg' %}" width="162"
+                                                   height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">周怡</div>
+        </li>
+        <li>
+            <div class="pic"><a href="chenkang"><img src="{% static 'img/postgraduate/chenkang-min.jpg ' %}" width="162"
+                                                     height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">陈康</div>
+        </li>
+        <li>
+            <div class="pic"><a href="liyong"><img src="{% static 'img/postgraduate/liyong-min.jpg ' %}" width="162"
+                                                   height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">李庸</div>
+        </li>
+        <li>
+            <div class="pic"><a href="jinchunlei"><img src="{% static 'img/postgraduate/jinchunlei-min.jpg ' %}"
+                                                       width="162"
+                                                       height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">金春雷</div>
+        </li>
 
-            </ul>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">RIMLer                &nbsp;&nbsp;<a href="/shiyanshichengyuan/yilikairenyuan" style="font-size:14px;color:gray;float: right;">更多&gt;&gt;</a>            </div>
-            <ul class="chengyuan">
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yilikairenyuan/2017-10-24/1596.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-10-24/d08658258380e4117909ef00c4d2c132.png" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yilikairenyuan/2016-07-17/1223.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2016-07-17/19c67a074ef930f58dd6e3cf1f447a9d.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yilikairenyuan/2017-05-25/1500.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-05-25/a8fead2646c60905051258422186c0e6.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yilikairenyuan/2017-06-29/1530.html"><img src="/d/file/shiyanshichengyuan/benkesheng/2017-06-29/893105e4607f5432e47c362616582a04.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-                <li>
-                    <div class="pic"><a href="/shiyanshichengyuan/yilikairenyuan/2014-12-17/396.html"><img src="/d/file/shiyanshichengyuan/yanjiusheng/2014-12-19/c868e4ccf6e000cf9b8d3eb3e6c42bb4.jpg" width="162" height="212"></a></div>
-                    <div class="title" style="border-bottom-width:0;">name</div>
-                </li>
-            </ul>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div class="clear" style="height:20px;"></div>
-        </td>
-    </tr>
- </table>
-<div class="clear"></div>
+        <li>
+            <div class="pic"><a href="zhaoyuhang"><img src="{% static 'img/postgraduate/zhaoyuhang.jpg' %}" width="162"
+                                                       height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">赵宇航</div>
+        </li>
+        <li>
+            <div class="pic"><a href="zhanghao"><img src="{% static 'img/postgraduate/zhanghao.jpg' %}" width="162"
+                                                     height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">张灏</div>
+        </li>
+        <li>
+            <div class="pic"><a href="dingwei"><img src="{% static 'img/postgraduate/dingwei.jpg' %}" width="162"
+                                                    height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">丁伟</div>
+        </li>
+        <li>
+            <div class="pic"><a href="wangwei"><img src="{% static 'img/postgraduate/wangwei.jpg' %}" width="162"
+                                                    height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">王伟</div>
+        </li>
+        <li>
+            <div class="pic"><a href="yangjiongshan"><img src="{% static 'img/postgraduate/yangjiongchan.jpg' %}"
+                                                          height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">杨炯灿</div>
+        </li>
+        <li>
+            <div class="pic"><a href="kuangye"><img src="{% static 'img/postgraduate/kuangye.jpg' %}"
+                                                    height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">匡也</div>
+        </li>
+        <li>
+            <div class="pic"><a href="sunhong"><img src="{% static 'img/postgraduate/sunhong-min.jpg' %}"
+                                                    height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">孙泓</div>
+        </li>
+
+    </ul>
+    <div class="clear" style="height:10px;"></div>
+    <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">本科生</div>
+    <p style="text-align: center; color: rgb(98, 98, 98);font-size: medium;">正在完善中</p>
+
+
 
 {% endblock %}
-{% block scripts %}
-{% endblock %}
+
+
+
+

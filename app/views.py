@@ -15,23 +15,81 @@ def member(request):
 
 
 def teacher(request):
-    return render(request, "member/teacher/teacher.html", locals())
+    t = "member/teacher/teacher.html"
+    return render(request, t, locals())
+
+
+def member_teacher(request, name):
+    t = "member/teacher/" + name + ".html"
+    return render(request, t, locals())
+
+
+def doctor(request):
+    t = "member/dc/doctor.html"
+    return render(request, t, locals())
+
+
+def member_doctor(request, name):
+    t = "member/dc/" + name + ".html"
+    return render(request, t, locals())
+
+
+def post_doctoral(request):
+    t = "member/post_doctoral/post_doctoral.html"
+    return render(request, t, locals())
+
+
+def member_post_doctoral(request, name):
+    t = "member/post_doctoral/" + name + ".html"
+    return render(request, t, locals())
 
 
 def postgraduate(request):
-    return render(request, "member/postgraduate/postgraduate.html", locals())
+    t = "member/postgraduate/postgraduate.html"
+    return render(request, t, locals())
+
+
+def member_postgraduate(request, name):
+    t = "member/postgraduate/" + name + ".html"
+    return render(request, t, locals())
 
 
 def undergraduate(request):
-    return render(request, "member/undergraduate.html", locals())
+    t = "member/undergraduate/undergraduate.html"
+    return render(request, t, locals())
 
 
-def assistant(request):
-    return render(request, "member/dc/dc.html", locals())
+def member_undergraduate(request, name):
+    t = "member/undergraduate/" + name + ".html"
+    return render(request, t, locals())
 
 
-def rimler(request):
-    return render(request, "member/RIMLer.html", locals())
+def scholars(request):
+    t = "member/scholars/scholars.html"
+    return render(request, t, locals())
+
+
+def member_scholars(request, name):
+    t = "member/scholars/" + name + ".html"
+    return render(request, t, locals())
+
+
+# def teacher(request):
+#     return render(request, "member/teacher/teacher.html", locals())
+#
+#
+# def postgraduate(request):
+#     return render(request, "member/postgraduate/postgraduate.html", locals())
+#
+#
+# def undergraduate(request):
+#     return render(request, "member/undergraduate.html", locals())
+#
+
+#
+#
+# def rimler(request):
+#     return render(request, "member/RIMLer.html", locals())
 
 
 def xueshuchengguo(request):
@@ -76,22 +134,6 @@ def lunwen2018(request):
 
 def lunwen2016(request):
     return render(request, "xueshuchengguo/lunwen2016.html", locals())
-
-
-def keyanfangxiang(request):
-    return render(request, "keyanfangxiang/keyanfangxiang.html", locals())
-
-
-def chengdanxiangmu(request):
-    return render(request, "keyanfangxiang/chengdanxiangmu.html", locals())
-
-
-def yiqishebei(request):
-    return render(request, "keyanfangxiang/yiqishebei.html", locals())
-
-
-def xiangguanzazhi(request):
-    return render(request, "keyanfangxiang/xiangguanzazhi.html", locals())
 
 
 def xueshuhuodong(request):
@@ -202,8 +244,7 @@ def yilikai(request):
     return render(request, "member/yilikai/yilikai.html", locals())
 
 
-def dc(request):
-    return render(request, "member/dc/dc.html", locals())
+
 
 
 def sunhong(request):
@@ -233,29 +274,86 @@ def d1228(request):
 def d1220(request):
     return render(request, "news/d1220.html", locals())
 
+
 def chenkang(request):
     return render(request, "member/postgraduate/chenkang.html", locals())
+
 
 def liyong(request):
     return render(request, "member/postgraduate/liyong.html", locals())
 
+
 def jinchunlei(request):
     return render(request, "member/postgraduate/jinchunlei.html", locals())
+
 
 def abdulazeez(request):
     return render(request, "member/postgraduate/abdulazeez.html", locals())
 
+
 def d722(request):
     return render(request, "news/d722.html", locals())
+
 
 def d1125(request):
     return render(request, "news/d1125.html", locals())
 
+
 def d419(request):
     return render(request, "news/d419.html", locals())
+
 
 def d624(request):
     return render(request, "news/d624.html", locals())
 
+
 def d825(request):
     return render(request, "news/d825.html", locals())
+
+
+def about(request, uri):
+
+    t = "about/"+uri+".html"
+    return render(request, t, locals())
+
+
+def research(request, uri):
+
+    t = "keyanfangxiang/"+uri+".html"
+    return render(request, t, locals())
+
+
+def achievement(request, uri):
+
+    t = "achievement/"+uri+".html"
+    return render(request, t, locals())
+
+
+def culture(request, uri):
+    t = "shiyanshiwenhua/" + uri + ".html"
+    return render(request, t, locals())
+
+
+def activity(request, uri):
+    t = "xueshuhuodong/" + uri + ".html"
+    return render(request, t, locals())
+
+
+def chufang(request, uri):
+    t = "xueshuhuodong/" + uri + ".html"
+    return render(request, t, locals())
+
+
+def work(request, uri):
+    t = "jiaoxuegongzuo/" + uri + ".html"
+    return render(request, t, locals())
+
+
+def recruit(request, uri):
+    t = "jobs/" + uri + ".html"
+    return render(request, t, locals())
+
+
+def news(request):
+    t = "news/news.html"
+    return render(request, t, locals())

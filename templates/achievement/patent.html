@@ -1,0 +1,32 @@
+{% extends "achievement/ach_base.html" %}
+{% load staticfiles %}
+
+{% block title %}发明专利{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;&gt;&nbsp;<a href="/ach/papaer"
+                                                                           style="text-decoration: none">学术成果</a>&nbsp;&gt;&nbsp;发明专利
+    </div>
+{% endblock %}
+
+{% block ach_content %}
+    <div id="wsite-content" class="wsite-elements wsite-not-footer">
+
+        <div style="padding:0 20px;height:50px;line-height:50px;font-size:28px;color:#c50000;">发明专利</div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+        <div class="clear" style="height:20px;"></div>
+
+        <div class="ui-project">
+            <p>1、双足行走机器人运动计算软件V1.0（软件著作权），申请号：2018SR694130，申请人：南京理工大学，申请时间：2018.7.18</p>
+            <p>2、一种摩擦力精确可调的冲击式压电驱动装置（发明专利），中国专利申请号：201610238565.2，申请人：南京理工大学，申请时间：2017.6.2</p>
+
+        </div>
+    </div>
+{% endblock %}
+{% block keyan_scripts %}
+
+{% endblock %}
+

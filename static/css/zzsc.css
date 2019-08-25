@@ -6,7 +6,7 @@ img{ border:0;}
 #picshow{position:relative;}
 #picshow,#picshow_img{width:700px; height:300px; overflow:hidden; float:left;}
 #picshow_img li{width:700px; height:300px; overflow:hidden; float:left; display:none;}
-#picshow_img img{width:700px; height:300px;}
+#picshow_img img{width:700px; }
 #picshow_tx{left:0px; width:700px; bottom:0px; position:absolute; height:90px; overflow:hidden;}
 #picshow_tx li{background:url(../images/picshow_bg.png) repeat; padding:10px 30px; height:70px; color:#fff; display:none;}
 #picshow_tx li a{color:#fff;}

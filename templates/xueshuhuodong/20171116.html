@@ -1,0 +1,37 @@
+{% extends "xueshuhuodong/activity_base.html" %}
+{% load staticfiles %}
+{% block  act_styles%}
+    <style>
+    .act-pic{
+        text-align: center;
+    }
+    .act-pic img{
+        max-height: 400px;
+    }
+    </style>
+{% endblock %}
+
+{% block title %}学术活动{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">学术活动</a>&nbsp;>&nbsp;<a href="/member/teacher" style="text-decoration: none">出访活动</a>>
+    </div>
+{% endblock %}
+
+{% block act_content %}
+   <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">访问中国科学院天文光学研究所并做报告 </div>
+
+
+             <div class="ui-project">
+                 <div class="act-pic"><img src="{% static 'img/activity/20190512-1.jpg' %}"  ></div>
+                 <p>
+                     2017年11月16日上午9时，南京天光所青促会第十九期学术沙龙在二楼会议室举行。来自南京理工大学做了题为“柔性机构和智能结构的接触-碰撞瞬态动力学”的报告，主要介绍了RIML在科学研究和工程应用方面的工作进展，尤其是在智能机器和柔性机构方面的接触碰撞问题与现场的光学仪器专家进行了详细的讨论
+                 </p>
+                 <div class="act-pic"><img src="{% static 'img/activity/20190512-2.jpg' %}"  ></div>
+
+                <div class="contentpage"></div>
+            </div>
+{% endblock %}
+
+

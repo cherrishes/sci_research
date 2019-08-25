@@ -7,16 +7,17 @@
     border-width:0;
 }*/
 .chengyuan li{
-    width:166px;
+    width:170px;
     height:250px;
     float:left;
     margin:5px 10px;
     text-align:center;
+    overflow: hidden;
 }
 
 .chengyuan li a{
     padding:1px;
-    border:1px solid #ccc;
+
     display:block;
 }
 
@@ -29,13 +30,14 @@
 img.pic,
 .pic a img{
     padding:1px;
-    border:1px solid #ccc;
+
 }
 
 .clear{clear:both;overflow:hidden;}
 .location{
     height: 25px;
     line-height: 25px;
+    margin-top: 10px;
     border-bottom: 2px solid #dfe0e4;
 }
 .location .location_mark{
@@ -52,8 +54,8 @@ img.pic,
     color:#e81f1f;
 }
 .leftclassname{
-    margin:10px 10px 0 10px;
-    padding-top:10px;
+    margin:0px 10px 0 0px;
+    padding:10px;
     background:white;
     text-align: center;
     font-size: 16px;
@@ -61,8 +63,9 @@ img.pic,
     cursor: default;
 }
 .leftsubclass{
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 0px;
     background:white;
+    height: 100%;
 }
 .leftsubclass ul{
     padding:10px 25px;
@@ -94,4 +97,26 @@ img.pic,
 #conten{
     margin-left: 25px;
 
+}
+.pic{
+    text-align: center;
+    /*border: 1px solid #ccc;*/
+    overflow: hidden;
+}
+.itext p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px 20px 0em 20px;
+    line-height: 1.75;
+    color: rgb(98, 98, 98);
+    white-space: normal;
+    font-size: medium !important;
+    word-wrap: break-word;
+    text-align: justify;
+    text-indent: 2em;
+
+}
+.ui-project{
+    padding-left: 20px;
+    padding-right: 30px;
 }
