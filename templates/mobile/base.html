@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="沈煜年教授课题组,南京理工大学大学沈煜年课题组,南京理工机器人学与智能机器实验室,沈煜年,机器人,智能机器，摩擦，接触碰撞">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'mui/css/mui.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"/>
+    <style>
+        html,
+        body {
+            background-color: #efeff4;
+        }
+
+        p {
+            text-indent: 22px;
+        }
+
+        span.mui-icon {
+            font-size: 14px;
+            color: #007aff;
+            margin-left: -15px;
+            padding-right: 10px;
+        }
+
+        .mui-off-canvas-right {
+            color: #fff;
+        }
+
+        .title {
+            margin: 35px 15px 10px;
+        }
+
+        .title + .content {
+            margin: 10px 15px 35px;
+            color: #bbb;
+            text-indent: 1em;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        input {
+            color: #000;
+        }
+
+        .mui-bar .mui-title {
+            left: 10px;
+            text-align: left;
+
+        }
+        .more-icon {
+            color: #333;
+            padding-top: 5px !important;
+            font-size: 33px !important;
+        }
+
+        .mui-bar-tab {
+            top: 44px;
+            background-color: #f4f4f4;
+            height: 41px;
+        }
+
+        .mui-bar-tab .mui-tab-item {
+            height: 40px;
+        }
+
+        .mui-scroll-wrapper {
+            top: 40px;
+            overflow: auto;
+        }
+
+        .mui-content {
+            position: relative;
+            top: 85px
+        }
+
+        .mui-slider-item {
+            max-height: 265px;
+            height: 265px;
+        }
+        .mui-draggable{
+            height: 85px;
+            position: fixed;
+            z-index: 10;
+        }
+        .bottom{
+            position: relative;
+            margin-top: 100px;
+            bottom: 0;
+        }
+        .bottoms{
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .mui-scroll-wrapper{
+            top:10px
+        }
+    </style>
+    {% block styles %}{% endblock %}
+</head>
+
+<body>
+<!--侧滑菜单容器-->
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+    <!--菜单部分-->
+    <aside id="offCanvasSide" class="mui-off-canvas-right">
+        <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate" href="/app">
+
+                            网站首页
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate" href="/app/about">
+                            关于我们
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate" href="/app/research">
+                            科学研究
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate" href="/app/result">
+                            学术成果
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate">
+                            实验室成员
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate">
+                            实验室文化
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="content">
+
+                    <p style="margin: 10px 15px;">
+                        <button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block"
+                                style="padding: 5px 20px;">关闭菜单
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="mui-inner-wrap">
+        <header class="mui-bar mui-bar-nav">
+
+            <a id="offCanvasBtn" href="#offCanvasSide"
+               class="mui-icon mui-action-menu mui-icon-bars mui-pull-right more-icon"></a>
+            <h1 class="mui-title"><img src="{% static 'img/mobile_lab.png' %}" width="240" height="44" alt=""></h1>
+        </header>
+        <nav class="mui-bar mui-bar-tab">
+            <a class="mui-tab-item index " href="/app">
+
+                <span class="mui-tab-label">网站首页</span>
+            </a>
+            <a class="mui-tab-item about" href="/app/about">
+
+                <span class="mui-tab-label">关于我们</span>
+            </a>
+            <a class="mui-tab-item research" href="/app/research">
+
+                <span class="mui-tab-label">科学研究</span>
+            </a>
+            <a class="mui-tab-item result" href="/app/result">
+
+                <span class="mui-tab-label">学术成果</span>
+            </a>
+        </nav>
+
+        <!-- off-canvas backdrop -->
+        <div class="mui-off-canvas-backdrop"></div>
+    </div>
+</div>
+<div class="mui-content">
+        {% block content %}{% endblock %}
+
+        </div>
+<div class="bottom">
+    <div class="bottoms">
+        <div class="dizhi" style="line-height:1.5;text-align:center;font-size:14px;"><p>地址：南京理工大学理学院</p>
+            <p>Tel：027-6875-5687 &nbsp;&nbsp;&nbsp;Fax：027-6875-5687&nbsp;&nbsp;&nbsp;<br>Email：shenyunian@aliyun.com </p>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
+<script src="{% static 'mui/js/mui.min.js' %}"></script>
+
+<script>
+    mui.init({
+        swipeBack: false,
+    });
+    //侧滑容器父节点
+    var offCanvasWrapper = mui('#offCanvasWrapper');
+
+    document.getElementById('offCanvasHide').addEventListener('tap', function () {
+        offCanvasWrapper.offCanvas('close');
+    });
+    //主界面和侧滑菜单界面均支持区域滚动；
+    mui('#offCanvasSideScroll').scroll();
+    mui('#offCanvasContentScroll').scroll();
+    //实现ios平台的侧滑关闭页面；
+    if (mui.os.plus && mui.os.ios) {
+        offCanvasWrapper[0].addEventListener('shown', function (e) { //菜单显示完成事件
+            plus.webview.currentWebview().setStyle({
+                'popGesture': 'none'
+            });
+        });
+        offCanvasWrapper[0].addEventListener('hidden', function (e) { //菜单关闭完成事件
+            plus.webview.currentWebview().setStyle({
+                'popGesture': 'close'
+            });
+        });
+    }
+
+    mui('body').on( 'tap' , 'a' , function(){
+	document.location.href=this.href;
+} )
+</script>
+{% block scripts %}{% endblock %}
+</body>
+
+</html>

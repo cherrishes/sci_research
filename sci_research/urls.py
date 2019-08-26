@@ -1,11 +1,13 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
+from app.mobile.urls import app_patterns
+
 urlpatterns = patterns('',
                        # Examples:
                        # url(r'^$', 'sci_research.views.home', name='home'),
                        # url(r'^blog/', include('blog.urls')),
-
+                       url(r'^app/', include(app_patterns)),
                        url(r'^admin/', include(admin.site.urls)),
                        url(r'^$', 'app.views.home', name='home'),
                        url(r'^member$', 'app.views.member', name='member'),

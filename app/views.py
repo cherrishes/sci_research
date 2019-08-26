@@ -6,7 +6,24 @@ from django.views.decorators.csrf import csrf_exempt
 __author__ = 'rdy'
 
 
+def is_mobile(request):
+    """
+    判断浏览器是否为移动设备浏览器
+    :param request:
+    :return:
+    """
+    if "HTTP_USER_AGENT" in request.META.keys():
+        agent = request.META["HTTP_USER_AGENT"].lower()
+        view = request.REQUEST.get("view", "")
+        if "android" in agent or "mobile" in agent or "iemobile" in agent:
+            if view != "pc":
+                return True
+    return False
+
+
 def home(request):
+    if is_mobile(request):
+        return render(request, "mobile/home.html", locals())
     return render(request, "home.html", locals())
 
 

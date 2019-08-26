@@ -1,0 +1,58 @@
+{% extends "mobile/base.html" %}
+{% load staticfiles %}
+{% block title %}欢迎来到沈煜年课题组-机器人学与智能机器实验室{% endblock %}
+{% block styles %}
+    <style>
+        .mui-lab-info {
+
+        }
+
+        .mui-lab-info p {
+            line-height: 1.75;
+            {#font-size: medium;#}
+            padding: 0 10px;
+        }
+
+        .line {
+            width: 95%;
+            margin: auto;
+            height: 2px;
+            background: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .mui-lab-title {
+            text-align: center;
+            color: #8a2a36;
+            margin: 20px 0;
+        }
+
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="mui-lab-info">
+        <h4 class="mui-lab-title">RIML主要科研项目</h4>
+        <div class="line"></div>
+        <p>[1] 柔性机构摩擦动态自锁及其波动特性的理论与实验研究，国家自然科学基金面上项目，主持、在研
+
+        <p>[2] 尼龙曳引轮疲劳强度及高温蠕变的研究，产学研课题，主持、在研</p>
+
+        <p>[3] 尼龙传动轮的结构强度和刚度分析与设计，产学研课题，主持、已结题</p>
+
+        <p>[4] 高炉炉顶设备主体结构优化设计，产学研课题，主持、在研</p>
+
+        <p>[5] 导弹飞行器折叠机构设计与开发，国防课题，主持、已结题</p>
+
+        <p>[6] 大型过山车轨道立柱动态响应的软件，国防课题，主持、已结题</p>
+
+        <p>[7] 智能压电结构接触-碰撞瞬态响应及其波动特性研究，国家自然科学基金青年基金项目，主持、已结题</p>
+
+        <p>[8] 压电结构接触响应和波动特性研究，高等学校博士学科点专项科研基金（新教师类），主持、已结题</p>
+
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        $(".research").addClass("mui-active")
+    </script>
+{% endblock %}

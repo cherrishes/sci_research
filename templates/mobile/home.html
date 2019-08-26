@@ -1,0 +1,167 @@
+{% extends "mobile/base.html" %}
+{% load staticfiles %}
+{% block title %}欢迎来到沈煜年课题组-机器人学与智能机器实验室{% endblock %}
+{% block styles %}
+    <style>
+        .mui-new-card {
+            margin: 10px 0;
+        }
+
+        .mui-research {
+            height: 45px;
+            padding-top: 13px;
+            padding-left: 10px;
+        }
+
+        .mui-research .left {
+            color: #8a2a36;
+            margin-left: 10px;
+            font-size: 16px;
+            font-family: 'Georgia', 'Microsoft YaHei';
+            font-weight: bolder;
+        }
+
+        .mui-research .left a.active {
+            color: #8a2a36;
+        }
+        .mui-research .left a {
+            color: gray;
+        }
+
+        .mui-research .left:before {
+            display: block;
+            content: "";
+            height: 20px;
+            width: 7px;
+            background: #8a2a36;
+            float: left;
+            margin-top: 0px;
+            margin-right: 5px;
+        }
+
+        .mui-research .right {
+            float: right;
+            margin-right: 10px;
+            color: #e3afb6;
+            font-weight: 500;
+
+        }
+
+        .mui-badge-danger {
+            right: 5px !important;
+            top: 22% !important;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div id="slider" class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="{% static 'img/slider1/2.jpg' %}">
+                    <p class="mui-slider-title">杨炯灿会议证明</p>
+                </a>
+            </div>
+            <div class="mui-slider-item ">
+                <a href="#">
+                    <img src="{% static 'img/slider1/1.jpg' %}">
+                    <p class="mui-slider-title">智慧城市技术与创意设计大赛中取得佳绩</p>
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="{% static 'img/slider1/3.jpg' %}">
+                    <p class="mui-slider-title">匡也会议邀请信</p>
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="{% static 'img/slider1/4.jpg' %}">
+                    <p class="mui-slider-title">创新杯三等奖</p>
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="{% static 'img/slider1/2.jpg' %}">
+                    <p class="mui-slider-title">杨炯灿会议证明</p>
+                </a>
+            </div>
+
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="{% static 'img/slider1/1.jpg' %}">
+                    <p class="mui-slider-title">智慧城市技术与创意设计大赛中取得佳绩</p>
+                </a>
+            </div>
+        </div>
+        <div class="mui-slider-indicator mui-text-right">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+        </div>
+    </div>
+    <div class="mui-card mui-new-card">
+        <ul class="mui-table-view">
+
+            <li class="mui-table-view-divider mui-research"><span class="left">研究进展</span><span
+                    class="right">Research</span></li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    <span class="mui-badge mui-badge-danger">new</span>
+                    柔性梁含摩擦斜碰撞的刚体－弹簧－质点混合模型研究
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+
+                    压电周期性结构滤波特性的计算模型研6 02a
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+
+                    多芯片双面PCB的热应力分析
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="mui-card mui-new-card">
+        <ul class="mui-table-view">
+
+            <li class="mui-table-view-divider mui-research"> <span class="left"><a href="" class="active">新闻动态</a>&nbsp;&nbsp; <a
+                    href="">通知公告</a></span> <span class="right">News</span></li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    <span class="mui-badge mui-badge-danger">new</span>
+                    祝贺2015级硕士顺利毕业!
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+
+                    祝贺李延泽、唐家栋活动院长奖章！
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+
+                    祝贺匡也同学参加澳门召开的IEEE机器人国际会议!
+                </a>
+            </li>
+        </ul>
+
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script>
+     var slider = mui("#slider");
+    slider.slider({
+        interval: 5000
+    });
+    $(".index").addClass("mui-active")
+    </script>
+{% endblock %}

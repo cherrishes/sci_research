@@ -1,0 +1,76 @@
+{% extends "mobile/base.html" %}
+{% load staticfiles %}
+{% block title %}欢迎来到沈煜年课题组-机器人学与智能机器实验室{% endblock %}
+{% block styles %}
+    <style>
+        .mui-lab-info {
+
+        }
+
+        .mui-lab-info p {
+            line-height: 1.75;
+            {#font-size: medium;#}
+            padding: 0 10px;
+            text-indent: 0;
+        }
+
+        .line {
+            width: 95%;
+            margin: auto;
+            height: 2px;
+            background: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .mui-lab-title {
+            text-align: center;
+            color: #8a2a36;
+            margin: 20px 0;
+        }
+
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="mui-lab-info">
+        <h4 class="mui-lab-title">学术论文</h4>
+        <div class="line"></div>
+        <div class="mui-card">
+            <div class="mui-card-header">柔性梁含摩擦斜碰撞的刚体－弹簧－质点混合模型研究</div>
+            <div class="mui-card-content">
+                <div class="mui-card-content-inner">
+                    <p>作 者：沈煜年，顾金红</p>
+                    <p>发表期刊：振动工程学报 第29卷 第1期</p>
+                    <p>发表时间：2016年2月</p>
+                </div>
+            </div>
+
+        </div>
+    <div class="mui-card">
+            <div class="mui-card-header">压电周期性结构滤波特性的计算模型研究</div>
+            <div class="mui-card-content">
+                <div class="mui-card-content-inner">
+                    <p>作 者：沈煜年，胡擎，尹晓春</p>
+                    <p>发表期刊：中国科技论文在线</p>
+                    <p>发表时间：2015年12月</p>
+                </div>
+            </div>
+
+        </div>
+    <div class="mui-card">
+            <div class="mui-card-header">多芯片双面PCB的热应力分析</div>
+            <div class="mui-card-content">
+                <div class="mui-card-content-inner">
+                    <p>作 者：王兴久，沈煜年</p>
+                    <p>发表期刊：南京理工大学学报(自然科学版)第34卷 第2期</p>
+                    <p>发表时间：2010年4月</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        $(".result").addClass("mui-active")
+    </script>
+{% endblock %}

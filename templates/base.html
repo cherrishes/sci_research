@@ -8,11 +8,11 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="keywords"content="沈煜年教授课题组,南京理工大学大学沈煜年课题组,南京理工机器人学与智能机器实验室,沈煜年,机器人,智能机器，摩擦，接触碰撞">
+    <meta name="keywords" content="沈煜年教授课题组,南京理工大学大学沈煜年课题组,南京理工机器人学与智能机器实验室,沈煜年,机器人,智能机器，摩擦，接触碰撞">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/daohang.css' %}" type="text/css"><!---->
-
+    <link rel="shortcut icon" href="{%static 'img/favicon.ico' %}" />
     {% block styles %}{% endblock %}
 </head>
 <body>
@@ -74,56 +74,56 @@
 {#            <li><a href="RIMLer">RIMLer</a></li>#}
         </ul>
     </div>
-    <div class="item keyan culture"><a href="shiyanshiwenhua">实验室文化</a>
+    <div class="item keyan culture"><a href="/culture/riml_star">实验室文化</a>
         <ul>
-            <li class="second-menu"><a href="#">RIML之星</a>
+            <li class="second-menu"><a href="/culture/riml_star">RIML之星</a>
 {#                <ul class="third-menu">#}
 {#                    <li><a href="zhinengzhixing">学术之星</a></li>#}
 {#                    <li><a href="zuijiatuandui">发展之星</a></li>#}
 {#                    <li><a href="quanjiafu">进步之星</a></li>#}
 {#                </ul>#}
             </li>
-            <li><a href="zuijiatuandui">卓越学子</a>
+            <li><a href="/culture/excellent_star">卓越学子</a>
 {#                <ul>#}
 {#                    <li><a href="zhinengzhixing">国家奖学金获得者</a></li>#}
 {#                    <li><a href="zuijiatuandui">学校奖学金获得者</a></li>#}
 {#                    <li><a href="quanjiafu">科研基金获得者</a></li>#}
 {#                </ul>#}
             </li>
-            <li><a href="quanjiafu">RIML全家福</a></li>
-            <li><a href="juhuiyuanzu">聚会远足</a></li>
-            <li><a href="chengyuanfengcai">成员风采</a></li>
-            <li><a href="xiaoyuanfengguang">校园风光</a></li>
-            <li><a href="biyeshifen">毕业时分</a></li>
+            <li><a href="/culture/quanjiafu">RIML全家福</a></li>
+            <li><a href="/culture/juhuiyuanzu">聚会远足</a></li>
+            <li><a href="/culture/chengyuanfengcai">成员风采</a></li>
+            <li><a href="/culture/xiaoyuanfengguang">校园风光</a></li>
+            <li><a href="/culture/biyeshifen">毕业时分</a></li>
         </ul>
     </div>
-    <div class="item keyan activity"><a href="xueshuhuodong">学术活动</a>
+    <div class="item keyan activity"><a href="/activity/laifang">学术活动</a>
         <ul>
-            <li><a href="xueshuhuodong/jiqirenluntan.html">来访讲座</a></li>
-            <li><a href="xueshuhuodong/rengongzhinengshijie.html">出访活动</a></li>
-            <li><a href="xueshuhuodong/xueshuhuiyi.html">学术会议</a></li>
-            <li><a href="xueshuhuodong/shuangbianjiaoliu.html">RIML论坛</a></li>
+            <li><a href="/activity/laifang">来访讲座</a></li>
+            <li><a href="/activity/chufang">出访活动</a></li>
+            <li><a href="/activity/meeting">学术会议</a></li>
+            <li><a href="/activity/riml">RIML论坛</a></li>
         </ul>
     </div>
-    <div class="item keyan work"><a href="jiaoxuegongzuo">教学工作</a>
+    <div class="item keyan work"><a href="/work/course_teach">教学工作</a>
         <ul>
-            <li><a href="benkeshengdaoshi">本科生导师</a></li>
-            <li><a href="">科技竞赛</a></li>
-            <li><a href="">课堂教学</a></li>
-            <li><a href="">本科生科研训练</a></li>
+            <li><a href="/work/undergraduate">本科生导师</a></li>
+            <li><a href="/work/technology">科技竞赛</a></li>
+            <li><a href="/work/course_teach">课堂教学</a></li>
+            <li><a href="/work/research_training">本科生科研训练</a></li>
         </ul>
     </div>
-    <div class="item keyan recruit"><a href="job">招生招聘</a>
+    <div class="item keyan recruit"><a href="/recruit/graduate">招生招聘</a>
         <ul>
-            <li><a href="">博士后</a></li>
-            <li><a href="">免试研究生</a></li>
-            <li><a href="">统考研究生</a></li>
-            <li><a href="">本科科研助理</a></li>
+            <li><a href="/recruit/post_doctoral">博士后</a></li>
+            <li><a href="/recruit/exempt_exam">免试研究生</a></li>
+            <li><a href="/recruit/graduate">统考研究生</a></li>
+            <li><a href="/recruit/undergraduate">本科科研助理</a></li>
         </ul>
     </div>
     <div class="item gengduo more"><a href="more">更多</a>
         <ul>
-            <li><a href="">新闻动态</a></li>
+            <li><a href="/news">新闻动态</a></li>
             <li><a href="">通知公告</a></li>
             <li><a href="">维护团队</a></li>
 
@@ -134,7 +134,7 @@
 <div class="bottom">
     <div class="bottoms">
         <div class="dizhi" style="line-height:1.5;text-align:center;font-size:14px;">地址：江苏省南京市玄武区孝陵卫街道200号南京理工大学理学院
-            <p>Tel：xxxxxxxxxxx &nbsp;&nbsp;&nbsp;Fax：20000&nbsp;&nbsp;&nbsp;Email：xxxxxxxx@qq.com </p>
+            <p>Tel：027-6875-5687 &nbsp;&nbsp;&nbsp;Fax：027-6875-5687&nbsp;&nbsp;&nbsp;Email：shenyunian@aliyun.com </p>
         </div>
     </div>
 </div>
