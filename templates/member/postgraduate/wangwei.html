@@ -1,0 +1,53 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}研究生{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a
+            href="/member/postgraduate" style="text-decoration: none">硕士研究生</a>>&nbsp;<a href=""
+                                                                                         style="text-decoration: none">王伟</a>
+
+    </div>
+{% endblock %}
+
+{% block mem_content %}
+
+            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">王伟               </div>
+            <ul class="chengyuan">
+                <li>
+                    <div class="pic"><a href=""><img src="{% static 'img/postgraduate/wangwei.jpg' %}" height="212"></a></div>
+                </li>
+
+            </ul>
+            <div class="clear" style="height:10px;"></div>
+             <div class="ui-project">
+                 <p>自我评价：
+                 平时喜欢看书，兴趣广泛，喜欢安静的环境，我认为勇于探索，冷静思考是科研人员必备的品质</p>
+
+                 <p>个人简历：
+                     <ul>
+                         <li><p>1993年2月   出生于重庆市云阳县</p></li>
+                         <li><p>2011年5月   南京理工大学理学院工程力学</p></li>
+                         <li><p>2015年9月   南京理工大学理学院工程力学系研究生</p></li>
+                     </ul>
+                 </p>
+                 <p>主要工作：研究课题主要为双连杆Painlevé paradox的模拟仿真，以及相关理论研究。</p>
+                 <p>
+                     研究成果：<ul>
+                 <li><p><strong>Wang W</strong>, Shen Y N, Zhao Y H. Transient dynamic computation of frictional contact-impact of flexible robotic two-link manipulator[C]. 6th World Tribology Congress. Beijing, China, 2017</p></li>
+                 <li><p>Kuang Y, Shen Y N, <strong>Wang W</strong>, Zhang S. Painlevé paradox during passive dynamic walking of biped robots[C]. 2017 IEEE International Conference on Robotics and Biomimetics, Macau SAR, China, 2017: 1258-1263</p></li>
+                 <li><p>Zhao Y H, Shen Y N, Ding W, <strong>Wang W</strong>. Experimental investigation of oblique collision for robotic two-link manipulator with friction[C]. 6th World Tribology Congress. Beijing, China, 2017</p></li>
+                 <li><p>赵宇航，<strong>王伟</strong>. 用于双连杆斜碰撞的实验装置及其实验方法[P] 专利申请号：201710638561.8</p></li>
+                 <li><p>沈煜年, <strong>王伟</strong>. 柔性机器人机械臂接触碰撞的多刚体-有限元混合分析方法[P] 专利申请号：201810076053.X</p></li>
+                </ul>
+                 </p>
+                 <p>联系方式：983838004@qq.com</p>
+             </div>
+            <div class="clear" style="height:10px;"></div>
+
+{% endblock %}
+
+

@@ -1,74 +1,53 @@
-{% extends "base.html" %}
+{% extends "member/member_base.html" %}
 {% load staticfiles %}
 
 
 {% block title %}研究生{% endblock %}
-{% block styles %}
-    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a
+            href="/member/postgraduate" style="text-decoration: none">硕士研究生</a>>&nbsp;<a href=""
+                                                                                         style="text-decoration: none">匡也</a>
+
+    </div>
 {% endblock %}
 
-{% block content %}
-    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
-<table style="margin:0 auto;width:1200px;background:white;">
-    <tr>
-        <td width="10"></td>
-        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
-            <div class="leftclassname">实验室成员</div>
-            <div class="leftsubclass">
-                <ul>
-                     <li class=""><a href="teacher" style="text-decoration: none;font-size: 13px" ><div class="b1">&gt;</div><div class="b2" >o</div> 教师</a></li>
-                    <li class=""><a href="dc" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 博士研究生</a></li>
-                    <li class=""><a href="postgraduate" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 在读硕士研究生</a></li>
-                    <li class=""><a href="undergraduate" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 本科生</a></li>
-                    <li class=""><a href="yilikai" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> 已离开硕士生</a></li>
-                    <li class=""><a href="RIMLer" style="text-decoration: none;font-size: 13px"><div class="b1">&gt;</div><div class="b2">o</div> RIMLer</a></li>
-                </ul>
-            </div>
-        </td>
-        <td width="10"></td>
-        <td valign="top">
-            <div class="location">
-                <i class="location_mark"></i>
-                <div>
-                    <b>当前位置：</b>
-                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="postgraduate" style="text-decoration: none">研究生</a>>&nbsp;<a href="" style="text-decoration: none">匡也</a>
+{% block mem_content %}
 
-                </div>
-            </div>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">匡也               </div>
-            <ul class="chengyuan">
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">匡也</div>
+    <ul class="chengyuan">
+        <li>
+            <div class="pic"><a href=""><img src="{% static 'img/postgraduate/kuangye.jpg' %}"
+                                             height="212"></a></div>
+        </li>
+
+    </ul>
+    <div class="clear" style="height:10px;"></div>
+    <div class="ui-project">
+        <p>自我评价：
+            我是一个慢热的人，喜欢一个人的思考。在二十年的学习生活中，我认为目标是一个重要的事情，适度的思考、远望能帮助自己确立目标。同时慢热的性格培养了自己的平常心。学习生活中的坎坷如此的多，总归还是要一步一步往前前行的。</p>
+        <p>个人箴言:
+            心怀坦荡，兰心傲骨</p>
+        <p>个人简历：
+        <ul>
+            <li><p>1993年8月 出生于吉林长春</p></li>
+            <li><p>2012年9月 进入东南大学土木工程学院就读工程力学专业</p></li>
+            <li><p>2016年9月 进入南京理工大学理学院就读一般力学与力学基础专业</p></li>
+        </ul>
+        </p>
+        <p>研究成果：
+            <ul>
                 <li>
-                    <div class="pic"><a href=""><img src="{% static 'img/postgraduate/IMG201309150190.jpg' %}" width="162" height="212"></a></div>
-                </li>
+        <p><strong>Kuang Y</strong>, Shen Y N, Wang W, Zhang S. Painlevé paradox during passive dynamic walking of biped
+            robots[C]. 2017 IEEE International Conference on Robotics and Biomimetics, Macau SAR, China, 2017:
+            1258-1263</p></li>
 
-            </ul>
-            <div class="clear" style="height:10px;"></div>
-             <div>
-                 <p>自我评价：
-                 我是一个慢热的人，喜欢一个人的思考。在二十年的学习生活中，我认为目标是一个重要的事情，适度的思考、远望能帮助自己确立目标。同时慢热的性格培养了自己的平常心。学习生活中的坎坷如此的多，总归还是要一步一步往前前行的。</p>
-                 <p>个人箴言:心怀坦荡，兰心傲骨</p>
-                 <p>
-                     <ui>
-                         个人简历：<li>1993年8月 出生于吉林长春</li>
-                         <li>2012年9月 进入东南大学土木工程学院就读工程力学专业</li>
-                         <li>2016年9月 进入南京理工大学理学院就读一般力学与力学基础专业</li>
-                     </ui>
-                 </p>
-                 <p>研究成果：
-                 <li><strong>Kuang Y</strong>, Shen Y N, Wang W, Zhang S. Painlevé paradox during passive dynamic walking of biped robots[C]. 2017 IEEE International Conference on Robotics and Biomimetics, Macau SAR, China, 2017: 1258-1263</li>
-                 </p>
-                 <p>联系方式：kuangyecn@foxmail.com</p>
-             </div>
-            <div class="clear" style="height:10px;"></div>
-            <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
-            <div class="clear" style="height:20px;"></div>
-        </td>
-    </tr>
- </table>
-<div class="clear"></div>
+        </ul></p>
+        <p>联系方式：kuangyecn@foxmail.com</p>
+    </div>
+    <div class="clear" style="height:10px;"></div>
+
 {% endblock %}
-{% block scripts %}
-{% endblock %}
+
 

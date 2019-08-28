@@ -87,6 +87,7 @@ def scholars(request):
 
 
 def member_scholars(request, name):
+
     t = "member/scholars/" + name + ".html"
     return render(request, t, locals())
 
@@ -229,30 +230,6 @@ def more(request):
     return render(request, "more/more.html", locals())
 
 
-def yangjiongshan(request):
-    return render(request, "member/postgraduate/yangjiongshan.html", locals())
-
-
-def zhaoyuhang(request):
-    return render(request, "member/yilikai/zhaoyuhang.html", locals())
-
-
-def zhangjing(request):
-    return render(request, "member/yilikai/zhangjing.html", locals())
-
-
-def dingwei(request):
-    return render(request, "member/yilikai/dingwei.html", locals())
-
-
-def kuangye(request):
-    return render(request, "member/postgraduate/kuangye.html", locals())
-
-
-def wangwei(request):
-    return render(request, "member/yilikai/wangwei.html", locals())
-
-
 def mrshen(request):
     return render(request, "member/teacher/mrshen.html", locals())
 
@@ -305,7 +282,7 @@ def jinchunlei(request):
 
 
 def abdulazeez(request):
-    return render(request, "member/postgraduate/abdulazeez.html", locals())
+    return render(request, "member/scholars/abdulazeez.html", locals())
 
 
 def d722(request):

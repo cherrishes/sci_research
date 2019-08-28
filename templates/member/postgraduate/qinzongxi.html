@@ -1,0 +1,21 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}研究生{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a
+            href="/member/postgraduate" style="text-decoration: none">硕士研究生</a>>&nbsp;<a href=""
+                                                                                 style="text-decoration: none">覃宗喜</a>
+
+    </div>
+{% endblock %}
+
+{% block mem_content %}
+
+           <div class="pic"><a href=""><img width="55%" src="{% static 'img/jianshezhong.bmp' %}" ></a></div>
+
+{% endblock %}
+
