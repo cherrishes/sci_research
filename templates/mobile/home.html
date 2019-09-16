@@ -51,6 +51,10 @@
             right: 5px !important;
             top: 22% !important;
         }
+    .mui-slider-title{
+        position: absolute;
+        top: 235px;
+    }
     </style>
 {% endblock %}
 {% block content %}
@@ -58,39 +62,51 @@
         <div class="mui-slider-group mui-slider-loop">
             <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
             <div class="mui-slider-item mui-slider-item-duplicate">
-                <a href="#">
+                <a href="/app/news/d624">
                     <img src="{% static 'img/slider1/2.jpg' %}">
                     <p class="mui-slider-title">杨炯灿会议证明</p>
                 </a>
             </div>
             <div class="mui-slider-item ">
-                <a href="#">
+                <a href="/app/news/d825">
                     <img src="{% static 'img/slider1/1.jpg' %}">
                     <p class="mui-slider-title">智慧城市技术与创意设计大赛中取得佳绩</p>
                 </a>
             </div>
             <div class="mui-slider-item">
-                <a href="#">
+                <a href="/app/news/d1220">
                     <img src="{% static 'img/slider1/3.jpg' %}">
                     <p class="mui-slider-title">匡也会议邀请信</p>
                 </a>
             </div>
             <div class="mui-slider-item">
-                <a href="#">
+                <a href="/app/news/d419">
                     <img src="{% static 'img/slider1/4.jpg' %}">
                     <p class="mui-slider-title">创新杯三等奖</p>
                 </a>
             </div>
             <div class="mui-slider-item">
-                <a href="#">
+                <a href="/app/news/d624">
                     <img src="{% static 'img/slider1/2.jpg' %}">
                     <p class="mui-slider-title">杨炯灿会议证明</p>
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="/app/news/d1125">
+                    <img src="{% static 'img/slider1/5.jpg' %}">
+                    <p class="mui-slider-title">物理与实验科技作品创新竞赛</p>
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="/app/news/d722">
+                    <img src="{% static 'img/slider1/6.jpg' %}">
+                    <p class="mui-slider-title">“晋拓杯”江苏省大学生机械创新设计大赛</p>
                 </a>
             </div>
 
             <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
             <div class="mui-slider-item mui-slider-item-duplicate">
-                <a href="#">
+                <a href="/app/news/d825">
                     <img src="{% static 'img/slider1/1.jpg' %}">
                     <p class="mui-slider-title">智慧城市技术与创意设计大赛中取得佳绩</p>
                 </a>
@@ -98,6 +114,8 @@
         </div>
         <div class="mui-slider-indicator mui-text-right">
             <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
             <div class="mui-indicator"></div>
             <div class="mui-indicator"></div>
             <div class="mui-indicator"></div>
@@ -147,7 +165,7 @@
                 </a>
             </li>
             <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">
+                <a class="mui-navigate-right" href="/app/news/d1220">
 
                     祝贺匡也同学参加澳门召开的IEEE机器人国际会议!
                 </a>

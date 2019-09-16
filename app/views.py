@@ -351,3 +351,8 @@ def recruit(request, uri):
 def news(request):
     t = "news/news.html"
     return render(request, t, locals())
+
+
+def news_info(request, uri):
+    t = "news/" + uri + ".html"
+    return render(request, t, locals())

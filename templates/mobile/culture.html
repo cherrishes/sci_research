@@ -1,0 +1,33 @@
+{% extends "mobile/base.html" %}
+{% load staticfiles %}
+{% block title %}欢迎来到沈煜年课题组-机器人学与智能机器实验室{% endblock %}
+{% block styles %}
+{% endblock %}
+<style>
+    .mui-card{
+        background-color: #f4f4f4;
+    }
+</style>
+
+{% block content %}
+    <h4 class="mui-lab-title">聚会远足</h4>
+    <div class="mui-card">
+
+				<div class="mui-card-content">
+					<img src="{% static 'img/juhuiyuanzhu/20190331.jpg' %}" alt="" width="100%">
+				</div>
+                <div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p style="color: #333;">2019年3月31日， 实验室全体团建剧本杀见证“友谊的终点”！</p>
+					</div>
+				</div>
+            <div class="mui-card-content">
+					<img src="{% static 'img/juhuiyuanzhu/20191027.jpg' %}" alt="" width="100%">
+				</div>
+                <div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p style="color: #333;">2018年10月27日， 实验室全体在体育公园的秋游——葫芦七兄弟</p>
+					</div>
+				</div>
+    </div>
+{% endblock %}

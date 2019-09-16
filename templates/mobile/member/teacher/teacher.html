@@ -1,0 +1,39 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+{% block title %}教师-实验室成员{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="#" style="text-decoration: none">教师</a>
+    </div>
+{% endblock %}
+{% block mem_content %}
+    <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">教师</div>
+    <ul class="chengyuan">
+        <li>
+            <div class="pic"><a href="/member/teacher/mrshen"><img src="{% static 'img/teacher/shenyinian.jpg' %}" width="162"
+                                                   height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">沈煜年 (PI)</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/chentao"><img src="{% static 'img/teacher/chentao.png' %}" width="162" height="212"></a>
+            </div>
+            <div class="title" style="border-bottom-width:0;">陈涛</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/xieyushu"><img src="{% static 'img/teacher/xieyushu.jpg' %}" width="162" height="212"></a>
+            </div>
+            <div class="title" style="border-bottom-width:0;">谢玉树</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/panjianzhi"><img src="{% static 'img/teacher/panjianzhi.jpg' %}" width="162"
+                                             height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">潘健智</div>
+        </li>
+        <li>
+            <div class="pic"><a href="/member/teacher/zhengjian"><img src="{% static 'img/no-img.jpg' %}" width="162" height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">郑健</div>
+        </li>
+    </ul>
+{% endblock %}
