@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="keywords" content="沈煜年教授课题组,南京理工大学大学沈煜年课题组,南京理工机器人学与智能机器实验室,沈煜年,机器人,智能机器，摩擦，接触碰撞">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/daohang.css' %}" type="text/css"><!---->
+    <link rel="shortcut icon" href="{%static 'img/favicon.ico' %}" />
+    {% block styles %}{% endblock %}
+</head>
+<body>
+<div class="daohang1">
+
+    <div style="float:left;margin-top:0px"><a href=""><img src="{% static 'img/new_lab.png' %}" height="90" width="500" ></a></div>
+    <!-- <div style="float:left;"><a href=""><img src="站徽2.jpg" height="100" /></a></div>
+     <div style="float:left;"><a href=""><img src="zhanming.jpg" height="100" /></a></div>-->
+{#    <div style="float:left;"><a href=""><img src="{% static 'img/jiqiren2.jpg' %}" height="100"/></a></div>#}
+{#    <div style="float:right;"><a href=""><img src="{% static 'img/logo1.png' %}" height="90" width="400"/></a></div>#}
+    <div style="float:right;top: 1px;">
+        <a href="" target="_blank" style="position:relative;text-align:right;top:-25px;">English</a>
+        <a href=""><img src="{% static 'img/logo1.png' %}" height="90" width="90"/></a></div>
+</div>
+<div class="daohang2">
+    <div class="item zhuye">
+        <a href="/">首页</a>
+    </div>
+    <div class="item keyan about">
+        <a href="/about/us">关于我们</a>
+        <ul>
+            <li><a href="/about/lab_profile">实验室简介</a></li>
+            <li><a href="/about/history">发展历史</a></li>
+            <li><a href="/about/lab_idea">发展理念</a></li>
+            <li><a href="/about/contact">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="item keyan research">
+        <a href="/research/general">科学研究</a>
+        <ul>
+
+            <li><a href="/research/chengdanxiangmu">承担项目</a></li>
+            <li><a href="/research/yiqishebei">仪器设备</a></li>
+            <li><a href="/research/xiangguanzazhi">相关杂志</a></li>
+        </ul>
+    </div>
+    <div class="item keyan xueshu">
+        <a href="/ach/general">学术成果</a>
+        <ul>
+            <li><a href="/ach/paper">学术论文</a></li>
+            <li><a href="/ach/translate">著作译著</a></li>
+            <li><a href="/ach/patent">发明专利</a></li>
+            <li><a href="/ach/honor">学术荣誉</a></li>
+            <li><a href="/ach/sample">产品样机</a></li>
+{#            <li><a href="liangdiangongzuo">亮点工作</a></li>#}
+            <li><a href="/ach/cover">封面集锦</a></li>
+
+
+
+        </ul>
+    </div>
+    <div class="item keyan libra"><a href="/member">实验室成员</a>
+        <ul>
+            <li><a href="/member/teacher">教师</a></li>
+             <li><a href="/member/scholars">访问学者</a></li>
+             <li><a href="/member/post_doctoral">博士后</a></li>
+            <li><a href="/member/doctor">博士研究生</a></li>
+            <li><a href="/member/postgraduate">硕士研究生</a></li>
+            <li><a href="/member/undergraduate">本科生</a></li>
+{#            <li><a href="yilikai">已离开硕士生</a></li>#}
+{#            <li><a href="RIMLer">RIMLer</a></li>#}
+        </ul>
+    </div>
+    <div class="item keyan culture"><a href="/culture/riml_star">实验室文化</a>
+        <ul>
+            <li class="second-menu"><a href="/culture/riml_star">RIML之星</a>
+{#                <ul class="third-menu">#}
+{#                    <li><a href="zhinengzhixing">学术之星</a></li>#}
+{#                    <li><a href="zuijiatuandui">发展之星</a></li>#}
+{#                    <li><a href="quanjiafu">进步之星</a></li>#}
+{#                </ul>#}
+            </li>
+            <li><a href="/culture/excellent_star">卓越学子</a>
+{#                <ul>#}
+{#                    <li><a href="zhinengzhixing">国家奖学金获得者</a></li>#}
+{#                    <li><a href="zuijiatuandui">学校奖学金获得者</a></li>#}
+{#                    <li><a href="quanjiafu">科研基金获得者</a></li>#}
+{#                </ul>#}
+            </li>
+            <li><a href="/culture/quanjiafu">RIML全家福</a></li>
+            <li><a href="/culture/juhuiyuanzu">聚会远足</a></li>
+            <li><a href="/culture/chengyuanfengcai">成员风采</a></li>
+            <li><a href="/culture/xiaoyuanfengguang">校园风光</a></li>
+            <li><a href="/culture/biyeshifen">毕业时分</a></li>
+        </ul>
+    </div>
+    <div class="item keyan activity"><a href="/activity/general">学术活动</a>
+        <ul>
+            <li><a href="/activity/laifang">来访讲座</a></li>
+            <li><a href="/activity/chufang">出访活动</a></li>
+            <li><a href="/activity/meeting">学术会议</a></li>
+            <li><a href="/activity/riml">RIML论坛</a></li>
+        </ul>
+    </div>
+    <div class="item keyan work"><a href="/work/course_teach">教学工作</a>
+        <ul>
+            <li><a href="/work/undergraduate">本科生导师</a></li>
+            <li><a href="/work/technology">科技竞赛</a></li>
+            <li><a href="/work/course_teach">课堂教学</a></li>
+            <li><a href="/work/research_training">本科生科研训练</a></li>
+        </ul>
+    </div>
+    <div class="item keyan recruit"><a href="/recruit/general">招生招聘</a>
+        <ul>
+            <li><a href="/recruit/post_doctoral">博士生（后）</a></li>
+            <li><a href="/recruit/exempt_exam">免试研究生</a></li>
+            <li><a href="/recruit/graduate">统考研究生</a></li>
+            <li><a href="/recruit/undergraduate">本科科研助理</a></li>
+        </ul>
+    </div>
+    <div class="item keyan gengduo more"><a href="/more">更多</a>
+        <ul>
+            <li><a href="/news">新闻动态</a></li>
+            <li><a href="">通知公告</a></li>
+            <li><a href="">维护团队</a></li>
+
+        </ul>
+    </div>
+</div>
+{% block content %}{% endblock %}
+<div class="bottom">
+    <div class="bottoms">
+        <div class="dizhi" style="line-height:1.5;text-align:center;font-size:14px;">地址：江苏省南京市玄武区孝陵卫街道200号南京理工大学理学院
+            <p>Tel：025-84315590 &nbsp;&nbsp;&nbsp;Fax：+86 2584315875&nbsp;&nbsp;&nbsp;Email：shenyunian@aliyun.com </p>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
+
+</body>
+{% block scripts %}{% endblock %}
+</html>

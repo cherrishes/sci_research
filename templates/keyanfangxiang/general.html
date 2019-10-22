@@ -1,0 +1,78 @@
+{% extends "keyanfangxiang/keyan_base.html" %}
+{% load staticfiles %}
+
+{% block title %}科学研究{% endblock %}
+{% block keysn_styles %}
+
+    <link href="http://leifu.whu.edu.cn/css/style.css" rel="stylesheet">
+    <style>
+        .pic img {
+            width: 420px;
+        }
+        .pic{
+            border: 0;
+        }
+    </style>
+{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;&gt;&nbsp;科学研究
+    </div>
+{% endblock %}
+
+{% block keyan_content %}
+    <div id="wsite-content" class="wsite-elements wsite-not-footer">
+
+        <div style="padding:0 20px;height:50px;line-height:50px;font-size:28px;color:#c50000;">RIML主要科研项目<p class="more-info"><a href="chengdanxiangmu">更多</a></p></div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+        <div class="clear" style="height:20px;"></div>
+
+        <div class="ui-project">
+            <p>[1] 柔性机构摩擦动态自锁及其波动特性的理论与实验研究，国家自然科学基金面上项目，主持、在研</p>
+            <p>[2] 尼龙曳引轮疲劳强度及高温蠕变的研究，产学研课题，主持、在研</p>
+            <p>[3] 尼龙传动轮的结构强度和刚度分析与设计，产学研课题，主持、已结题</p>
+
+
+        </div>
+
+        <div style="padding:0 20px;height:50px;line-height:50px;font-size:28px;color:#c50000;">仪器设备 <p class="more-info"> <a href="yiqishebei">更多</a></p></div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+        <div class="clear" style="height:20px;"></div>
+        <div class="piclictbox">
+            <ul class="piclist">
+                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="pic"><a href=""><img src="{% static 'img/device/NAC.jpg' %}"></a></div>
+                    <div class="title">
+                        <a href="../info/1004/1453.htm">高速摄影机 NAC MEMRECAM GX-3 V–190</a>
+                    </div>
+                </li>
+                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="pic"><a href=""><img src="{% static 'img/device/OFV.bmp' %}"></a></div>
+                    <div class="title">
+                        <a href="../info/1004/1453.htm">多普勒激光测振仪 OFV–5000 +OFV–505</a>
+                    </div>
+                </li>
+                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="pic"><a href=""><img src="{% static 'img/device/gscjy.bmp' %}"></a></div>
+                    <div class="title">
+                        <a href="../info/1004/1453.htm">高速动态信号采集仪 DH5939</a>
+                    </div>
+                </li>
+                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="pic"><a href=""><img src="{% static 'img/device/jgwy.bmp' %}"></a></div>
+                    <div class="title">
+                        <a href="../info/1004/1453.htm">激光位移传感器 MICROTRAK II</a>
+                    </div>
+                </li>
+            </ul>
+    </div>
+{% endblock %}
+{% block keyan_scripts %}
+
+{% endblock %}
+

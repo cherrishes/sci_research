@@ -282,7 +282,7 @@ def jinchunlei(request):
 
 
 def abdulazeez(request):
-    return render(request, "member/scholars/abdulazeez.html", locals())
+    return render(request, "member/scholars/../templates/member/postgraduate/abdulazeez.html", locals())
 
 
 def d722(request):

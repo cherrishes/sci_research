@@ -5,7 +5,7 @@
 {% block cur_position %}
     <div>
         <b>当前位置：</b>
-        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="#" style="text-decoration: none">硕士研究生</a>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a href="#" style="text-decoration: none">硕士研究生</a>
     </div>
 {% endblock %}
 {% block mem_content %}
@@ -13,7 +13,12 @@
 
     <h4 style="padding-left: 20px">在读研究生</h4>
     <ul class="chengyuan">
-
+        <li>
+            <div class="pic"><a href="/member/postgraduate/abdulazeez"><img src="{% static 'img/postgraduate/abdulazeez-min.jpg' %}"
+                                                       width="162"
+                                                       height="212"></a></div>
+            <div class="title" style="border-bottom-width:0;">abdulazeez</div>
+        </li>
         <li>
             <div class="pic"><a href="/member/postgraduate/zhangsai"><img src="{% static 'img/postgraduate/zhangsai-min.jpg' %}"
                                                      height="212"></a></div>
