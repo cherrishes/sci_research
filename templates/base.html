@@ -16,15 +16,127 @@
     {% block styles %}{% endblock %}
 </head>
 <body>
-<div class="daohang1">
+{% if english %}
+    <div class="daohang1">
 
     <div style="float:left;margin-top:0px"><a href=""><img src="{% static 'img/new_lab.png' %}" height="90" width="500" ></a></div>
-    <!-- <div style="float:left;"><a href=""><img src="站徽2.jpg" height="100" /></a></div>
-     <div style="float:left;"><a href=""><img src="zhanming.jpg" height="100" /></a></div>-->
-{#    <div style="float:left;"><a href=""><img src="{% static 'img/jiqiren2.jpg' %}" height="100"/></a></div>#}
-{#    <div style="float:right;"><a href=""><img src="{% static 'img/logo1.png' %}" height="90" width="400"/></a></div>#}
     <div style="float:right;top: 1px;">
-        <a href="" target="_blank" style="position:relative;text-align:right;top:-25px;">English</a>
+        <a href="http://rimlab.ac.cn" target="_self" style="position:relative;text-align:right;top:-25px;">中文</a>
+        <a href=""><img src="{% static 'img/logo1.png' %}" height="90" width="90"/></a></div>
+</div>
+<div class="daohang2">
+    <div class="item zhuye">
+        <a href="/">Home</a>
+    </div>
+    <div class="item keyan about">
+        <a href="/about/us">About</a>
+        <ul>
+            <li><a href="/about/lab_profile">Introduction</a></li>
+            <li><a href="/about/history">History</a></li>
+            <li><a href="/about/lab_idea">Ideas</a></li>
+            <li><a href="/about/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="item keyan research">
+        <a href="/research/general">SciResearch</a>
+        <ul>
+
+            <li><a href="/research/chengdanxiangmu">Project</a></li>
+            <li><a href="/research/yiqishebei">Equipment</a></li>
+            <li><a href="/research/xiangguanzazhi">Magazine</a></li>
+        </ul>
+    </div>
+    <div class="item keyan xueshu">
+        <a href="/ach/general">Achievement</a>
+        <ul>
+            <li><a href="/ach/paper">Thesis</a></li>
+            <li><a href="/ach/translate">Literature</a></li>
+            <li><a href="/ach/patent">Patent</a></li>
+            <li><a href="/ach/honor">Honor</a></li>
+            <li><a href="/ach/sample">Prototype</a></li>
+{#            <li><a href="liangdiangongzuo">亮点工作</a></li>#}
+            <li><a href="/ach/cover">Highlights</a></li>
+
+
+
+        </ul>
+    </div>
+    <div class="item keyan libra"><a href="/member">Member</a>
+        <ul>
+            <li><a href="/member/teacher">Teacher</a></li>
+             <li><a href="/member/scholars">Scholar</a></li>
+             <li><a href="/member/post_doctoral">Postdoctor</a></li>
+            <li><a href="/member/doctor">Doctor</a></li>
+            <li><a href="/member/postgraduate">Postgraduate</a></li>
+            <li><a href="/member/undergraduate">Undergraduate</a></li>
+{#            <li><a href="yilikai">已离开硕士生</a></li>#}
+{#            <li><a href="RIMLer">RIMLer</a></li>#}
+        </ul>
+    </div>
+    <div class="item keyan culture"><a href="/culture/riml_star">Culture</a>
+        <ul>
+            <li class="second-menu"><a href="/culture/riml_star">RIMLStar</a>
+{#                <ul class="third-menu">#}
+{#                    <li><a href="zhinengzhixing">学术之星</a></li>#}
+{#                    <li><a href="zuijiatuandui">发展之星</a></li>#}
+{#                    <li><a href="quanjiafu">进步之星</a></li>#}
+{#                </ul>#}
+            </li>
+            <li><a href="/culture/excellent_star">Outstanding</a>
+{#                <ul>#}
+{#                    <li><a href="zhinengzhixing">国家奖学金获得者</a></li>#}
+{#                    <li><a href="zuijiatuandui">学校奖学金获得者</a></li>#}
+{#                    <li><a href="quanjiafu">科研基金获得者</a></li>#}
+{#                </ul>#}
+            </li>
+            <li><a href="/culture/quanjiafu">Family</a></li>
+            <li><a href="/culture/juhuiyuanzu">Hiking</a></li>
+            <li><a href="/culture/chengyuanfengcai">Elegant</a></li>
+            <li><a href="/culture/xiaoyuanfengguang">Scenery</a></li>
+            <li><a href="/culture/biyeshifen">Graduation</a></li>
+        </ul>
+    </div>
+    <div class="item keyan activity"><a href="/activity/general">Activity</a>
+        <ul>
+            <li><a href="/activity/laifang">Visiting</a></li>
+            <li><a href="/activity/chufang">Lecture</a></li>
+            <li><a href="/activity/meeting">Conference</a></li>
+            <li><a href="/activity/riml">RIMLForum</a></li>
+        </ul>
+    </div>
+    <div class="item keyan work"><a href="/work/course_teach">Teaching</a>
+        <ul>
+            <li><a href="/work/undergraduate">Tutor</a></li>
+            <li><a href="/work/technology">Competition</a></li>
+            <li><a href="/work/course_teach">ClassroomTeaching</a></li>
+            <li><a href="/work/research_training">Training</a></li>
+        </ul>
+    </div>
+    <div class="item keyan recruit"><a href="/recruit/general">R&S</a>
+        <ul>
+            <li><a href="/recruit/post_doctoral">(Post)doctor</a></li>
+            <li><a href="/recruit/exempt_exam">ExemptionGraduate</a></li>
+            <li><a href="/recruit/graduate">Graduate</a></li>
+            <li><a href="/recruit/undergraduate">Undergraduate</a></li>
+        </ul>
+    </div>
+    <div class="item keyan gengduo more"><a href="/more">More</a>
+        <ul>
+            <li><a href="/news">News</a></li>
+            <li><a href="">Notice</a></li>
+            <li><a href="">Maintenance</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
+{% else %}
+    <div class="daohang1">
+
+    <div style="float:left;margin-top:0px"><a href=""><img src="{% static 'img/new_lab.png' %}" height="90" width="500" ></a></div>
+    <div style="float:right;top: 1px;">
+        <a href="http://en.rimlab.ac.cn" target="_self" style="position:relative;text-align:right;top:-25px;">English</a>
         <a href=""><img src="{% static 'img/logo1.png' %}" height="90" width="90"/></a></div>
 </div>
 <div class="daohang2">
@@ -132,14 +244,28 @@
         </ul>
     </div>
 </div>
+
+{% endif %}
 {% block content %}{% endblock %}
+
+{% if english %}
 <div class="bottom">
+    <div class="bottoms">
+        <div class="dizhi" style="line-height:1.5;text-align:center;font-size:14px;">Address：School of science, Nanjing University of technology, No. 200, Xiaolingwei street, Xuanwu District, Nanjing City, Jiangsu Province
+            <p>Tel：025-84315590 &nbsp;&nbsp;&nbsp;Fax：+86 2584315875&nbsp;&nbsp;&nbsp;Email：shenyunian@aliyun.com </p>
+        </div>
+    </div>
+</div>
+{% else %}
+    <div class="bottom">
     <div class="bottoms">
         <div class="dizhi" style="line-height:1.5;text-align:center;font-size:14px;">地址：江苏省南京市玄武区孝陵卫街道200号南京理工大学理学院
             <p>Tel：025-84315590 &nbsp;&nbsp;&nbsp;Fax：+86 2584315875&nbsp;&nbsp;&nbsp;Email：shenyunian@aliyun.com </p>
         </div>
     </div>
 </div>
+{% endif %}
+
 <script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
 
 </body>
