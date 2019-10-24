@@ -4,7 +4,7 @@
 
 {% block styles %}
     <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
-
+    <link href="{% static 'video/css/video-js.min.css' %}" rel="stylesheet" type="text/css">
     <style>
     .ui-project p{
         margin-top: 10px;
@@ -18,6 +18,30 @@
     text-align: justify;
     padding-bottom: 0;
         text-indent: 2em;
+    }
+    .mask{
+        width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    }
+    .close{
+        position: relative;
+    top: -140px;
+    right: 26%;
+    z-index: 8;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #8c8c8c;
+    opacity: 1;
+    border: none;
+    }
+    .video-js{
+        top:-140px
     }
     </style>
     {% block ach_styles %}{% endblock %}
@@ -65,11 +89,37 @@
 
 {% endblock %}
 {% block scripts %}
+    <script src="{% static 'video/js/video.min.js' %}"></script>
     <script>
     $(".xueshu").addClass("nav-active")
 
     </script>
+    <script>
+    var myPlayer;
+    function play(index) {
+        var video_list = {
+            1:"{% static 'video/sample.mp4' %}",
+            2:"{% static 'video/sample2.mp4' %}"
+        };
+        console.log(video_list);
 
+
+        myPlayer = videojs('example_video_'+index);
+        myPlayer.ready(function(){
+        myPlayer.play();    // 调用播放函数
+    });
+        $(".video-item").removeClass("hidden");
+        $(".video"+index).removeClass("hidden");
+
+
+    }
+    $("#close").bind("click", function () {
+        $(".video-item").addClass("hidden");
+        $(".video-js").addClass("hidden");
+        $(".mask").fadeOut(300);
+        myPlayer.pause();
+    });
+    </script>
     {% block ach_scripts %}
         {% endblock %}
 {% endblock %}

@@ -82,6 +82,35 @@
             <p><a style="text-decoration: none;" target="_blank" href="{% static 'paper/一种摩擦力精确可调的冲击式压电驱动装置（发明专利）.pdf' %}">2、一种摩擦力精确可调的冲击式压电驱动装置（发明专利）</a>，中国专利申请号：201610238565.2，申请人：南京理工大学，申请时间：2017.6.2</p>
 
         </div>
+
+        <div class="ui-se-title">产品样机 <p class="more-info">
+            <a href="patent">更多</a></p></div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+        <div class="clear" style="height:20px;"></div>
+
+        <div class="ui-project">
+            <p><a style="text-decoration: none;" onclick="play(1)">1、四旋翼无人机</a></p>
+            <p><a style="text-decoration: none;"  onclick="play(2)">2、行走飞行双模机器人</a></p>
+
+        </div>
+    <div class="mask hidden video-item"></div>
+    <div class="hidden video-item">
+    <input type="button" title="关闭" value="×" class="close" id="close"/>
+        <video id="example_video_1" class="video-js vjs-default-skin video1 hidden" controls preload="none" height="600"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="{% static 'video/sample.mp4' %}" type='video/mp4' />
+
+        </video>
+        <video id="example_video_2" class="video-js vjs-default-skin video2 hidden" controls preload="none" width="700"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="{% static 'video/sample2.mp4' %}" type='video/mp4' />
+
+        </video>
+    </div>
     </div>
 {% endblock %}
 {% block ach_scripts %}

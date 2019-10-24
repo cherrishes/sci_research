@@ -1,6 +1,20 @@
 {% extends "achievement/ach_base.html" %}
 {% load staticfiles %}
+{% block ach_styles %}
+    <link href="{% static 'video/css/video-js.min.css' %}" rel="stylesheet" type="text/css">
+    <style>
+    .ach-content{
+        padding: 30px;
+    }
+    .ach-content img{
+        width: 20px;
+    }
+    .ach-content a{
+        cursor: pointer;
+    }
 
+    </style>
+{% endblock %}
 {% block title %}产品样机{% endblock %}
 {% block cur_position %}
     <div>
@@ -11,19 +25,40 @@
 {% endblock %}
 
 {% block ach_content %}
+    <div class="ach-content"><a class="btn2" onclick="play(1)"><img src="{% static 'img/videos.png' %}" class="act-video">《四旋翼无人机》</a></div>
+    <div class="ach-content"><a class="btn2" onclick="play(2)"><img src="{% static 'img/videos.png' %}" class="act-video">《行走飞行双模机器人》</a></div>
+    <div class="mask hidden video-item"></div>
+    <div class="hidden video-item">
+    <input type="button" title="关闭" value="×" class="close" id="close"/>
+        <video id="example_video_1" class="video-js vjs-default-skin video1 hidden" controls preload="none" height="600"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="{% static 'video/sample.mp4' %}" type='video/mp4' />
 
-    <div class="pic"><video src="{% static 'video/sample.mp4' %}" controls="controls" height="600px">
-您的浏览器不支持 video 标签。
-</video></div>
-    <p style="text-align: center">《四旋翼无人》</p>
+        </video>
+        <video id="example_video_2" class="video-js vjs-default-skin video2 hidden" controls preload="none" width="700"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="{% static 'video/sample2.mp4' %}" type='video/mp4' />
+
+        </video>
+    </div>
 
 
-    <div class="pic"><video src="{% static 'video/sample2.mp4' %}" controls="controls" width="750px">
-您的浏览器不支持 video 标签。
-</video></div>
-    <p style="text-align: center">《行走飞行双模机器人》</p>
+
+{#    <div class="pic"><video src="{% static 'video/sample.mp4' %}" controls="controls" height="600px">#}
+{#您的浏览器不支持 video 标签。#}
+{#</video></div>#}
+{#    <p style="text-align: center">《四旋翼无人机》</p>#}
+{##}
+{##}
+{#    <div class="pic"><video src="{% static 'video/sample2.mp4' %}" controls="controls" width="750px">#}
+{#您的浏览器不支持 video 标签。#}
+{#</video></div>#}
+{#    <p style="text-align: center">《行走飞行双模机器人》</p>#}
 {% endblock %}
 {% block ach_scripts %}
+<script src="{% static 'video/js/video.min.js' %}"></script>
 
 {% endblock %}
 
