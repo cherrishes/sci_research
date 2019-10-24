@@ -1,11 +1,10 @@
-{% extends "base.html" %}
+{% extends "more/more_base.html" %}
 {% load staticfiles %}
 {% block title %}
     新闻动态
 {% endblock %}
 
-{% block styles %}
-    <link href="{% static 'css/ziye.css' %}" rel="stylesheet"/>
+{% block more_styles %}
 
     <style>
         .ui-project p {
@@ -21,29 +20,27 @@
             padding-bottom: 0;
             text-indent: 2em;
         }
+    .list-item{
+        border-bottom: 1px dashed #ccc;
+    }
+    a{
+        text-decoration: none;
+    }
     </style>
 
 {% endblock %}
-{% block content %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/more"
+                                                                        style="text-decoration: none">新闻动态</a>
+    </div>
+{% endblock %}
+{% block more_content %}
 
-    <div style="clear:both;margin:0 auto;width:1200px;height:10px;"></div>
-    <table style="margin:0 auto;width:1200px;background:white;">
-        <tr>
 
-            <td width="10"></td>
-            <td valign="top">
-                <div class="location">
-                    <i class="location_mark"></i>
-                    <div>
-                        <b>当前位置：</b>
-                        <a href="/" style="text-decoration: none">更多</a>&nbsp;&gt;&nbsp;<a href="/ach/papaer"
-                                                                                           style="text-decoration: none">新闻动态</a>
-                    </div>
-
-                </div>
-                <div class="clear" style="height:20px;"></div>
-                <div id="content" style="margin-left:0px;">
-                    <div id="wsite-content" class="wsite-elements wsite-not-footer">
+    <div id="content" style="margin-left:0px;">
+    <div id="wsite-content" class="wsite-elements wsite-not-footer">
 
         <div style="padding:0 20px;height:50px;line-height:50px;font-size:28px;color:#c50000;">新闻动态</div>
         <div style="padding:20px;padding-top:0;">
@@ -53,45 +50,35 @@
 
         <div class="ui-project ui-paper">
             <ul>
-                <li>
-                    <h3>柔性梁含摩擦斜碰撞的刚体－弹簧－质点混合模型研究</h3>
-                    <p>作 者：沈煜年，顾金红</p>
-                    <p>发表期刊：振动工程学报 第29卷 第1期</p>
-                    <p>发表时间：2016年2月</p>
+                <li class="list-item">
+                    <h3><a href="/news/d416" >祝贺2015级硕士顺利毕业!</a></h3>
+                    <p>发布时间：2018年4月16日</p>
+                    <p>祝贺RIMLab的2015级硕士顺利毕业，感谢为实验室初创作出的无怨奉献！愿你们以实验室，理学院和南理工为起点，在充满机遇、挑战和困难的社会大舞台， 始终以齐家治国平天下为最终目标...</p>
+
                 </li>
-            </ul>
-            <ul>
-                <li>
-                    <h3>压电周期性结构滤波特性的计算模型研究</h3>
-                    <p>作 者：沈煜年，胡擎，尹晓春</p>
-                    <p>发表期刊：中国科技论文在线</p>
-                    <p>发表时间：2015年12月</p>
+
+                <li class="list-item">
+                    <h3><a href="/news/d1228">祝贺李延泽、唐家栋获得院长奖章!</a></h3>
+                    <p>发布时间：2017年12月28日</p>
+                    <p>祝贺所带2科研训练学生2014级班长李延泽和所带本科2015级工力一班班长唐佳栋双双获得陆院长颁发的院长奖章。 为你们取得的优异成绩点赞！继续努力，取得更大成绩，获得更大辉煌...</p>
                 </li>
-            </ul>
-            <ul>
-                <li>
-                    <h3>多芯片双面PCB的热应力分析</h3>
-                    <p>作 者：王兴久，沈煜年</p>
-                    <p>发表期刊：南京理工大学学报(自然科学版)第34卷 第2期</p>
-                    <p>发表时间：2010年4月</p>
+
+                <li class="list-item">
+                    <h3><a href="/news/d1220">祝贺匡也同学参加澳门召开的IEEE机器人国际会议!</a></h3>
+
+                    <p>发布时间：2017年12月20日</p>
+                    <p>祝贺本课题组匡也同学获得学校研究生院资助参加澳门召开的IEEE机器人国际会议，并在三百人的报告厅作口头报告， 经受了锻炼，祝贺你们的点滴进步，再接再厉...</p>
                 </li>
             </ul>
 
         </div>
     </div>
-
-                </div>
-
-
-            </td>
-        </tr>
-    </table>
+    </div>
 
 
-    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background-color: #f4f4f4"></div>
 
 {% endblock %}
-{% block scripts %}
+{% block more_scripts %}
     <script>
         $(".more").addClass("nav-active")
 

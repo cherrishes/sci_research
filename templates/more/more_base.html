@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+
+
+    {% block more_styles %}{% endblock %}
+{% endblock %}
+{% block content %}
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;"></div>
+<table style="margin:0 auto;width:1200px;background:white;">
+    <tr>
+
+        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
+            <div class="leftclassname">更多</div>
+            <div class="leftsubclass">
+                <ul>
+                    <li><a href="/news" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 新闻动态</a></li>
+                    <li><a href="/notice" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 通知公告</a></li>
+                    <li><a href="/team" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 维护团队</a></li>
+
+                </ul>
+            </div>
+        </td>
+        <td width="10"></td>
+        <td valign="top">
+            <div class="location">
+                <i class="location_mark"></i>
+                {% block cur_position %}
+                {% endblock %}
+
+            </div>
+
+           <div id="content" style="margin-left:0px;">
+               {% block more_content %}{% endblock %}
+
+           </div>
+
+
+        </td>
+    </tr>
+ </table>
+
+
+<div style="clear:both;margin:0 auto;width:1200px;height:10px;background-color: #f4f4f4"></div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+    $(".more").addClass("nav-active")
+
+    </script>
+
+    {% block more_scripts %}
+        {% endblock %}
+{% endblock %}
+
+

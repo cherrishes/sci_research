@@ -1,44 +1,111 @@
-{% extends "base.html" %}
+{% extends "more/more_base.html" %}
 {% load staticfiles %}
+{% block more_styles %}
+    <style>
+    .list-item{
+        height: 40px;
+    line-height: 40px;border-bottom: 1px dashed #ccc;
+    vertical-align: top;
 
+    }
+    .pre-fields{
+        display: inline;
+    float: left;
+    }
+    .ex-fields{
+        display: inline;
+    float: right;
+    }
+   .article-title a {
+    color: #333333 !important;
+    font-size: 14px;
+    padding-left: 15px;
+}
+    </style>
+{% endblock %}
 
 {% block title %}更多{% endblock %}
-{% block styles %}
-    <link href="{% static 'css/ziye.css' %}" rel="stylesheet" />
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/more" style="text-decoration: none">更多</a>
+    </div>
 {% endblock %}
-{% block content %}
-    <div style="clear:both;margin:0 auto;width:1200px;height:10px;background:white;"></div>
-<table style="margin:0 auto;width:1200px;background:white;">
-    <tr>
-        <td width="10"></td>
-        <td width="180" height="400" valign="top" style="background:#f2f2f2;">
-            <div class="leftclassname">更多</div>
-            <div class="leftsubclass">
-                <ul>
 
-                    <li class=""><a href="" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 新闻动态</a></li>
-                    <li class=""><a href="" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 通知公告</a></li>
-                    <li class=""><a href="" style="text-decoration: none"><div class="b1">&gt;</div><div class="b2">o</div> 维护团队</a></li>
+{% block more_content %}
+    <div id="wsite-content" class="wsite-elements wsite-not-footer">
 
-                </ul>
-            </div>
-        </td>
-        <td width="10"></td>
-        <td valign="top">
-            <div class="location">
-                <i class="location_mark"></i>
-                <div>
-                    <b>当前位置：</b>
-                    <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="more" style="text-decoration: none">更多</a>
-                </div>
-            </div>
+        <div class="ui-se-title">
+            新闻动态
+        </div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
 
-            <div style="position: relative;left: 50px;top: 10px;"><img src="{% static 'img/ud1.jpg' %}" height="200" width="400"/></div>
-            <div class="clear" style="height:20px;"></div>
+        <div class="ui-project ui-paper">
+            <ul class="news-article-list">
+                <li class="list-item">
+                    <div class="pre-fields">
+                        <span class="article-index">1</span>
+                        <span class="article-title">
+                            <a href="/news/d416">祝贺2015级硕士顺利毕业!</a>
+                        </span>
+                    </div>
+                    <div class="ex-fields">
+                        <span class="article-date">[2018-04-16]</span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="pre-fields">
+                        <span class="article-index">2</span>
+                        <span class="article-title">
+                            <a href="/news/d1228">祝贺李延泽、唐家栋获得院长奖章!</a>
+                        </span>
+                    </div>
+                    <div class="ex-fields">
+                        <span class="article-date">[2017-12-28]</span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="pre-fields">
+                        <span class="article-index">3</span>
+                        <span class="article-title">
+                            <a href="/news/d1220">祝贺匡也同学参加澳门召开的IEEE机器人国际会议!</a>
+                        </span>
+                    </div>
+                    <div class="ex-fields">
+                        <span class="article-date">[2017-12-20]</span>
+                    </div>
+                </li>
+            </ul>
 
-</table>
-<div class="clear"></div>
+        </div>
+
+        <div class="ui-se-title">
+            通知公告
+        </div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+
+
+        <div class="ui-project ui-paper">
+            <p style="text-align: center;">正在完善...</p>
+        </div>
+
+        <div class="ui-se-title">
+            维护团队
+        </div>
+        <div style="padding:20px;padding-top:0;">
+        </div>
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+
+
+        <div class="ui-project ui-paper">
+            <p style="text-align: center;">正在完善...</p>
+        </div>
+    </div>
 
 {% endblock %}
-{% block scripts %}
+{% block more_scripts %}
 {% endblock %}

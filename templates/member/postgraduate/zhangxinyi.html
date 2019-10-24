@@ -1,0 +1,45 @@
+{% extends "member/member_base.html" %}
+{% load staticfiles %}
+
+
+{% block title %}研究生{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;>&nbsp;<a href="/member" style="text-decoration: none">实验室成员</a>&nbsp;>&nbsp;<a
+            href="/member/postgraduate" style="text-decoration: none">硕士研究生</a>>&nbsp;<a href=""
+                                                                                 style="text-decoration: none">张新翼</a>
+
+    </div>
+{% endblock %}
+
+{% block mem_content %}
+
+           <div style="padding:0 20px;height:70px;line-height:70px;font-size:24px;color:#c50000;">张新翼               </div>
+            <ul class="chengyuan">
+                <li>
+                    <div class="pic"><a href=""><img src="{% static 'img/postgraduate/zhangxinyi.jpg' %}"  height="212"></a></div>
+                </li>
+
+            </ul>
+            <div class="clear" style="height:10px;"></div>
+             <div class="ui-project">
+                 <p>自我评价：
+                 热爱力学，幽默而不失稳重，让身边的人感到舒适。
+                 </p>
+                 <p>个人箴言: 每天叫醒你起床的不是闹钟，是梦想</p>
+                 <p>
+                 个人简历：
+                     <ul>
+                         <li><p>1997年出生于江苏省扬州市</p></li>
+                         <li><p>2015年进入江苏大学求学</p></li>
+                         <li><p>2019年考入南京理工大学研究生院</p></li>
+                     </ul>
+                 </p>
+
+                 <p>联系方式：</p>
+             </div>
+            <div class="clear" style="height:10px;"></div>
+
+{% endblock %}
+

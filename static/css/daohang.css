@@ -14,7 +14,7 @@ body{
     height:40px;
     line-height:40px;
     font-size:16px;
-    background-color:#930093;
+    background-color:#c50000;
 }   
 .daohang2 .item{    
     margin:0;
@@ -238,7 +238,7 @@ ul{list-style:none;}
         height: 80px;
         margin: 0 auto;
         background-color: #fff;
-    border-top: 1px solid #930093;
+    border-top: 1px solid #c50000;
 }
 .bottoms{
         margin: 0 auto;
@@ -261,4 +261,7 @@ ul{list-style:none;}
 }
 .nav-active a{
     color: #000;
+}
+.ui-se-title{
+    padding:0 20px;height:50px;line-height:50px;font-size:24px;color:#c50000;margin-top: 20px;
 }
