@@ -15,6 +15,10 @@
             {#width: 420px;#}
         height: 100%;
         }
+.ui-paper-item{
+    float: left;
+    width: 50%;
+}
 </style>
 {% endblock %}
 {% block cur_position %}
@@ -27,8 +31,7 @@
 {% block act_content %}
     <div id="wsite-content" class="wsite-elements wsite-not-footer">
         <div class="ui-se-title">来访讲座</div>
-        <div style="padding:20px;padding-top:0;">
-        </div>
+
         <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
 
         <div class="ui-project ui-paper">
@@ -36,19 +39,18 @@
         </div>
 
         <div class="ui-se-title">出访活动</div>
-        <div style="padding:20px;padding-top:0;">
-        </div>
+
         <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
 
         <div class="ui-project ui-paper">
-            <ul>
-                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="pic"><a href="/chufang/20190413""><img src="{% static 'img/activity/20190413-1.jpg' %}"></a></div>
+            <ul style="height: 310px">
+                <li class="ui-paper-item">
+                    <div class="pic"><a href="/chufang/20190413"><img src="{% static 'img/activity/20190413-1.jpg' %}"></a></div>
                     <div class="title">
                         <p><a href="/chufang/20190413">参加“第十五届苏港力学及其应用论坛”</a></p>
                     </div>
                 </li>
-                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <li class="ui-paper-item">
                     <div class="pic"><a href="/chufang/20171116"><img src="{% static 'img/activity/20190512-2.jpg' %}"></a></div>
                     <div class="title">
                         <p><a href="/chufang/20171116">访问中国科员天光所</a></p>
@@ -59,8 +61,7 @@
         </div>
 
         <div class="ui-se-title">学术会议</div>
-        <div style="padding:20px;padding-top:0;">
-        </div>
+
         <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
 
         <div class="ui-project ui-paper">
@@ -68,8 +69,7 @@
         </div>
 
         <div class="ui-se-title">RIML论坛</div>
-        <div style="padding:20px;padding-top:0;">
-        </div>
+
         <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
 
         <div class="ui-project ui-paper">

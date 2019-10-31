@@ -1,6 +1,9 @@
 body{
     background-color: #f4f4f4;
 }
+p{
+    margin: 0px;
+}
 .daohang1{margin:0 auto;
               width: 1200px;
               overflow: hidden;
@@ -11,10 +14,10 @@ body{
     margin:0 auto;
     padding:0px;
     width:1200px;
-    height:40px;
-    line-height:40px;
+    height:35px;
+    line-height:35px;
     font-size:16px;
-    background-color:#c50000;
+    background-color:#d23f1f;
 }   
 .daohang2 .item{    
     margin:0;
@@ -238,7 +241,7 @@ ul{list-style:none;}
         height: 80px;
         margin: 0 auto;
         background-color: #fff;
-    border-top: 1px solid #c50000;
+    border-top: 1px solid #d23f1f;
 }
 .bottoms{
         margin: 0 auto;
