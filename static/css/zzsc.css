@@ -7,8 +7,8 @@ img{ border:0;}
 #picshow,#picshow_img{width:750px; height:350px; overflow:hidden; float:left;}
 #picshow_img li{width:750px; height:350px; overflow:hidden; float:left; display:none;}
 #picshow_img img{width:700px; }
-#picshow_tx{left:0px; width:700px; bottom:0px; position:absolute; height:70px; overflow:hidden;}
-#picshow_tx li{background:url(../images/picshow_bg.png) repeat; padding:5px 30px; height:70px; color:#fff; display:none;background-color: rgba(0,0,0, 0.6)}
+#picshow_tx{left:0px; width:700px; bottom:0px; position:absolute; height:50px; overflow:hidden;}
+#picshow_tx li{background:url(../images/picshow_bg.png) repeat; padding:5px 30px; height:50px; color:#fff; display:none;background-color: rgba(0,0,0, 0.6)}
 #picshow_tx li a{color:#fff;}
 #picshow_tx li a:hover{text-decoration:underline;}
 #picshow_tx li h3{ margin:13px 0;}

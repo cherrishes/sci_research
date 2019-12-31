@@ -1,0 +1,17 @@
+{% extends "academic_activity/activity_base.html" %}
+{% load staticfiles %}
+
+{% block title %}来访讲座{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;&gt;&nbsp;<a href="/about/lab_profile"
+                                                                           style="text-decoration: none">关于我们</a>&nbsp;&gt;&nbsp;来访讲座
+    </div>
+{% endblock %}
+
+{% block act_content %}
+    <div class="pic"><a href=""><img width="55%" src="{% static 'img/jianshezhong.bmp' %}" ></a></div>
+{% endblock %}
+
+

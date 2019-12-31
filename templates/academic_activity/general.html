@@ -1,0 +1,81 @@
+{% extends "academic_activity/activity_base.html" %}
+{% load staticfiles %}
+
+{% block title %}学术活动{% endblock %}
+{% block act_styles %}
+<style>
+.ui-project{
+    padding-left: 0;
+}
+.pic{
+    height: 300px;
+    border: 0;
+}
+    .pic img {
+            {#width: 420px;#}
+        height: 100%;
+        }
+.ui-paper-item{
+    float: left;
+    width: 50%;
+}
+</style>
+{% endblock %}
+{% block cur_position %}
+    <div>
+        <b>当前位置：</b>
+        <a href="/" style="text-decoration: none">首页</a>&nbsp;&gt;&nbsp;学术活动
+    </div>
+{% endblock %}
+
+{% block act_content %}
+    <div id="wsite-content" class="wsite-elements wsite-not-footer">
+        <div class="ui-se-title">来访讲座</div>
+
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+
+        <div class="ui-project ui-paper">
+            <p style="text-align: center">正在完善...</p>
+        </div>
+
+        <div class="ui-se-title">出访活动</div>
+
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+
+        <div class="ui-project ui-paper">
+            <ul style="height: 310px">
+                <li class="ui-paper-item">
+                    <div class="pic"><a href="/chufang/20190413"><img src="{% static 'img/activity/20190413-1.jpg' %}"></a></div>
+                    <div class="title">
+                        <p><a href="/chufang/20190413">参加“第十五届苏港力学及其应用论坛”</a></p>
+                    </div>
+                </li>
+                <li class="ui-paper-item">
+                    <div class="pic"><a href="/chufang/20171116"><img src="{% static 'img/activity/20190512-2.jpg' %}"></a></div>
+                    <div class="title">
+                        <p><a href="/chufang/20171116">访问中国科员天光所</a></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="ui-se-title">学术会议</div>
+
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+
+        <div class="ui-project ui-paper">
+            <p style="text-align: center">正在完善...</p>
+        </div>
+
+        <div class="ui-se-title">RIML论坛</div>
+
+        <div class="clear" style="border-bottom:1px solid #cccccc;"></div>
+
+        <div class="ui-project ui-paper">
+            <p style="text-align: center">正在完善...</p>
+        </div>
+    </div>
+{% endblock %}
+
+
