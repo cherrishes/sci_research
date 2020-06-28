@@ -161,13 +161,13 @@ def achievement(request, uri):
 
 def culture(request, uri):
     english = is_english(request)
-    t = "shiyanshiwenhua/" + uri + ".html"
+    t = "lab_culture/" + uri + ".html"
     return render(request, t, locals())
 
 
 def activity(request, uri):
     english = is_english(request)
-    t = "xueshuhuodong/" + uri + ".html"
+    t = "academic_activity/" + uri + ".html"
     return render(request, t, locals())
 
 
@@ -179,7 +179,7 @@ def chufang(request, uri):
 
 def work(request, uri):
     english = is_english(request)
-    t = "jiaoxuegongzuo/" + uri + ".html"
+    t = "teaching_work/" + uri + ".html"
     return render(request, t, locals())
 
 
