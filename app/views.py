@@ -149,7 +149,7 @@ def about(request, uri):
 
 def research(request, uri):
     english = is_english(request)
-    t = "keyanfangxiang/"+uri+".html"
+    t = "research/"+uri+".html"
     return render(request, t, locals())
 
 
